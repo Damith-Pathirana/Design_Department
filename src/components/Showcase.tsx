@@ -133,11 +133,11 @@ export default function Showcase() {
     }, []);
 
     const portfolioItems = [
-        { title: "Lumina Vision", category: "Topology", img: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=2670&auto=format&fit=crop" },
-        { title: "Fintech Grid", category: "Synthesis", img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop" },
-        { title: "Quartz Unit", category: "System", img: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2669&auto=format&fit=crop" },
-        { title: "Neural Base", category: "Interface", img: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2672&auto=format&fit=crop" },
-        { title: "Digital Flow", category: "Motion", img: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2670&auto=format&fit=crop" }
+        { title: "Bowatte Heritage", category: "E-commerce", img: "https://images.unsplash.com/photo-1540555700478-4be289fbecee?q=80&w=2670&auto=format&fit=crop", href: "/work/bowatte" },
+        { title: "Lumina Vision", category: "Topology", img: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=2670&auto=format&fit=crop", href: "#" },
+        { title: "Fintech Grid", category: "Synthesis", img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop", href: "#" },
+        { title: "Quartz Unit", category: "System", img: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2669&auto=format&fit=crop", href: "#" },
+        { title: "Neural Base", category: "Interface", img: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2672&auto=format&fit=crop", href: "#" }
     ];
 
     return (
@@ -170,14 +170,14 @@ export default function Showcase() {
                 <div className="w-full h-[60vh] flex items-center justify-center relative" style={{ perspective: '1600px', transformStyle: 'preserve-3d' }}>
                     <div className="absolute w-full h-full flex items-center justify-center" style={{ transformStyle: 'preserve-3d' }}>
                         {portfolioItems.map((item, idx) => (
-                            <div key={idx} className="sc-card absolute w-[280px] md:w-[380px] aspect-[3/4.5] rounded-lg overflow-hidden border border-void/5 flex flex-col justify-end p-6 shadow-2xl bg-white" style={{ transformOrigin: 'center center' }}>
+                            <a key={idx} href={item.href} className="sc-card absolute w-[280px] md:w-[380px] aspect-[3/4.5] rounded-lg overflow-hidden border border-void/5 flex flex-col justify-end p-6 shadow-2xl bg-white group/card" style={{ transformOrigin: 'center center' }}>
                                 <img src={item.img} className="absolute inset-0 w-full h-full object-cover opacity-90 transition-opacity grayscale hover:grayscale-0 duration-700" alt={item.title} />
                                 <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent opacity-60"></div>
                                 <div className="relative z-10">
                                     <span className="font-label text-[10px] font-black uppercase tracking-widest text-electric mb-1 block">{item.category}</span>
-                                    <h3 className="font-display text-2xl font-black italic tracking-tight text-void uppercase">{item.title}</h3>
+                                    <h3 className="font-display text-2xl font-black italic tracking-tight text-void uppercase group-hover/card:text-electric transition-colors">{item.title}</h3>
                                 </div>
-                            </div>
+                            </a>
                         ))}
                     </div>
                 </div>
