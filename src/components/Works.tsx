@@ -1,9 +1,79 @@
-import React from 'react';
-import { LayoutGrid, List } from "lucide-react";
+'use client';
 
-export default function Works() {
+import React, { useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
+import { LayoutGrid, List } from "lucide-react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+export default function Works({ projects }: { projects: any[] }) {
+    const containerRef = useRef<HTMLDivElement>(null);
+    const [layout, setLayout] = useState<'grid' | 'list'>('grid');
+    const displayProjects = projects || [];
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            gsap.registerPlugin(ScrollTrigger);
+        }
+
+        let ctx = gsap.context(() => {
+            // Text Revealer - Scoped to container
+            const revealTexts = containerRef.current?.querySelectorAll('.gs-reveal-text');
+            if (revealTexts) {
+                revealTexts.forEach(el => {
+                    const text = el.textContent || "";
+                    el.innerHTML = "";
+                    const words = text.split(" ");
+                    words.forEach(word => {
+                        const span = document.createElement("span");
+                        span.className = "inline-block overflow-hidden mr-[0.25em] align-bottom";
+                        const inner = document.createElement("span");
+                        inner.className = "inline-block translate-y-[110%] reveal-inner";
+                        inner.textContent = word;
+                        span.appendChild(inner);
+                        el.appendChild(span);
+                    });
+                });
+
+                gsap.to('.reveal-inner', {
+                    y: 0,
+                    duration: 1.5, // Slower (was 1.2)
+                    stagger: 0.05, // More deliberate (was 0.03)
+                    ease: "power2.out",
+                    scrollTrigger: {
+                        trigger: '.gs-reveal-wrapper',
+                        start: "top 95%",
+                    }
+                });
+
+                // Card Reveal - Individual "Reveal as you go"
+                const cards = gsap.utils.toArray<HTMLElement>('.project-card-node');
+                cards.forEach((card) => {
+                    gsap.fromTo(card,
+                        { y: 100, opacity: 0, scale: 0.95 },
+                        {
+                            y: 0,
+                            opacity: 1,
+                            scale: 1,
+                            duration: 1.8,  // Premium slow entrance
+                            ease: "power3.out",
+                            scrollTrigger: {
+                                trigger: card,
+                                start: "top 90%", // Trigger when closer to viewport entrance
+                                toggleActions: "play none none none"
+                            }
+                        }
+                    );
+                });
+            }
+
+        }, containerRef);
+
+        return () => ctx.revert();
+    }, [displayProjects, layout]);
+
     return (
-        <section id="work" className="w-full bg-paper text-void py-24 relative border-b border-border-light">
+        <section id="work" className="w-full bg-paper text-void pb-24 relative border-b border-border-light">
             <div className="absolute inset-0 pointer-events-none flex justify-center overflow-hidden z-0 hidden md:flex">
                 <div className="w-full max-w-screen-2xl px-4 md:px-8 relative h-full">
                     <div className="absolute inset-y-0 left-4 md:left-8 w-px bg-black/5">
@@ -29,61 +99,55 @@ export default function Works() {
                         </p>
                     </div>
 
-                    {/* Toggles */}
-                    <div className="flex items-center gap-2 shrink-0 gs-reveal-text">
-                        <button className="w-10 h-10 rounded-full bg-black/5 border border-black/10 flex items-center justify-center text-void transition-colors hover:bg-black/10">
+                    <div className="flex items-center gap-2 shrink-0">
+                        <button
+                            onClick={() => setLayout('grid')}
+                            className={`w-10 h-10 rounded-full flex items-center justify-center transition-all ${layout === 'grid' ? 'bg-zinc-950 text-white shadow-lg' : 'bg-black/5 text-void hover:bg-black/10'}`}
+                        >
                             <LayoutGrid strokeWidth={1.5} className="w-5 h-5" />
                         </button>
-                        <button className="w-10 h-10 rounded-full bg-transparent border border-black/10 flex items-center justify-center text-gray-400 hover:text-void transition-colors hover:border-black/20">
+                        <button
+                            onClick={() => setLayout('list')}
+                            className={`w-10 h-10 rounded-full flex items-center justify-center transition-all ${layout === 'list' ? 'bg-zinc-950 text-white shadow-lg' : 'bg-transparent border border-black/10 text-gray-400 hover:text-void hover:border-black/20'}`}
+                        >
                             <List strokeWidth={1.5} className="w-5 h-5" />
                         </button>
                     </div>
                 </div>
 
-                <div className="flex flex-col gap-32">
-
-                    {/* Project 1 */}
-                    <div className="w-full md:w-[85%] group cursor-pointer gs-reveal-wrapper">
-                        <div className="relative w-full p-[1px] rounded-[24px] bg-gradient-to-b from-black/10 to-transparent mb-6 overflow-hidden shadow-2xl shadow-black/10 gs-reveal-text">
-                            <div className="relative aspect-[16/9] md:aspect-[21/9] rounded-[23px] overflow-hidden bg-gray-100">
-                                <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=2670&auto=format&fit=crop" alt="The Quartz Unit" className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-[1.03] transition-all duration-1000 ease-out filter grayscale group-hover:filter-none" />
-
-                                <div className="absolute top-6 right-6 px-3 py-1.5 rounded-md bg-white/70 backdrop-blur-md border border-black/10">
-                                    <span className="text-xs font-semibold tracking-widest text-void uppercase">Topology</span>
+                <div className={`grid ${layout === 'grid' ? 'grid-cols-1 gap-40' : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12'} projects-stack-container`} ref={containerRef}>
+                    {displayProjects.map((project, idx) => {
+                        const cardInner = (
+                            <>
+                                <div className={`relative w-full p-[1px] rounded-[24px] bg-gradient-to-b from-black/10 to-transparent ${layout === 'grid' ? 'mb-6' : 'mb-4'} overflow-hidden shadow-2xl shadow-black/10`}>
+                                    <div className={`relative ${layout === 'grid' ? 'aspect-[16/9] md:aspect-[21/9]' : 'aspect-square'} rounded-[23px] overflow-hidden bg-gray-100`}>
+                                        <img src={project.mainImage} alt={project.title} className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-[1.03] transition-all duration-1000 ease-out filter grayscale group-hover:filter-none" />
+                                        <div className="absolute top-6 right-6 px-3 py-1.5 rounded-md bg-white/70 backdrop-blur-md border border-black/10">
+                                            <span className="text-xs font-semibold tracking-widest text-void uppercase">{project.category}</span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div className="flex items-start justify-between px-2 gs-reveal-text">
-                            <div>
-                                <h3 className="font-display text-2xl md:text-3xl tracking-tight text-void mb-1 font-bold italic">Lumina Vision</h3>
-                                <p className="text-[10px] text-gray-500 tracking-[0.2em] uppercase font-label">New York, HQ</p>
-                            </div>
-                            <span className="text-sm text-gray-500 font-bold font-label">2026</span>
-                        </div>
-                    </div>
-
-                    {/* Project 2 */}
-                    <div className="w-full md:w-[85%] ml-auto group cursor-pointer gs-reveal-wrapper">
-                        <div className="relative w-full p-[1px] rounded-[24px] bg-gradient-to-b from-black/10 to-transparent mb-6 overflow-hidden shadow-2xl shadow-black/10 gs-reveal-text">
-                            <div className="relative aspect-[16/9] md:aspect-[21/9] rounded-[23px] overflow-hidden bg-gray-100">
-                                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop" alt="Data Conservatory" className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-[1.03] transition-all duration-1000 ease-out filter grayscale group-hover:filter-none" />
-
-                                <div className="absolute top-6 right-6 px-3 py-1.5 rounded-md bg-white/70 backdrop-blur-md border border-black/10">
-                                    <span className="text-xs font-semibold tracking-widest text-void uppercase">Synthesis</span>
+                                <div className="flex items-start justify-between px-2">
+                                    <div>
+                                        <h3
+                                            className={`font-display ${layout === 'grid' ? 'text-2xl md:text-3xl' : 'text-xl'} tracking-tight text-void mb-1 font-bold italic`}
+                                            dangerouslySetInnerHTML={{ __html: project.title }}
+                                        />
+                                        <p className="text-[10px] text-gray-500 tracking-[0.2em] uppercase font-label">{project.location}</p>
+                                    </div>
+                                    <span className="text-sm text-gray-500 font-bold font-label">{project.year}</span>
                                 </div>
-                            </div>
-                        </div>
+                            </>
+                        );
 
-                        <div className="flex items-start justify-between px-2 gs-reveal-text">
-                            <div>
-                                <h3 className="font-display text-2xl md:text-3xl tracking-tight text-void mb-1 font-bold italic">Fintech Grid</h3>
-                                <p className="text-[10px] text-gray-500 tracking-[0.2em] uppercase font-label">London, Core</p>
+                        return (
+                            <div key={project.id} className={`w-full ${layout === 'grid' ? 'md:w-[85%]' : 'w-full'} ${layout === 'grid' && idx % 2 !== 0 ? 'ml-auto' : ''} group cursor-pointer project-card-node`}>
+                                <Link href={`/works/${project.id}`} className="block">
+                                    {cardInner}
+                                </Link>
                             </div>
-                            <span className="text-sm text-gray-500 font-bold font-label">2025</span>
-                        </div>
-                    </div>
-
+                        );
+                    })}
                 </div>
             </div>
         </section>

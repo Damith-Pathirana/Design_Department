@@ -1,0 +1,470 @@
+[
+    {
+        "id": "bowatte-heritage",
+        "title": "Bowatte Ayurvedic",
+        "subtitle": "Ayurvedic Heritage Design System",
+        "category": "Visual Identity & Platform",
+        "description": "A comprehensive digital transformation for Sri Lanka's leading name in Ayurvedic healthcare, modernizing a multi-generational legacy for a global wellness audience.",
+        "mainImage": "https://images.unsplash.com/photo-1612810806563-4cb166bbdaee?q=80&w=2670&auto=format&fit=crop",
+        "location": "Kandy / Colombo, SL",
+        "year": "2024",
+        "url": "https://bowatte.com",
+        "role": "Lead Design & Strategy",
+        "timeline": "6 Months",
+        "meta": {
+            "build": "Headless Commerce",
+            "systems": "Patient Care ERP",
+            "theme": "Heritage Minimal",
+            "engineering": "Advanced Integration"
+        },
+        "capabilities": [
+            {
+                "number": "01",
+                "title": "Brand Strategy",
+                "description": "Defining core heritage values for the 21st-century wellness consumer."
+            },
+            {
+                "number": "02",
+                "title": "Digital Pharmacy",
+                "description": "A streamlined e-commerce experience for traditional herbal remedies."
+            },
+            {
+                "number": "03",
+                "title": "Clinical Booking",
+                "description": "Direct synchronization with the Bowatte Ayurvedic Hospital patient systems."
+            },
+            {
+                "number": "04",
+                "title": "AI Consultation",
+                "description": "Intelligent symptom-mapping to recommend specific Ayurvedic treatments."
+            }
+        ],
+        "strategy": {
+            "headline": "Bridging Ancient Wisdom with Modern Precision",
+            "body": "The challenge was to respect the sanctity of Ayurvedic tradition while delivering a friction-less digital experience that matches the standards of global healthcare brands.",
+            "metricLabel": "Brand Engagement",
+            "metricValue": "+140%",
+            "metricDesc": "Increase in digital system adoption and online consultations",
+            "visualImage": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2640&auto=format&fit=crop"
+        },
+        "team": [
+            {
+                "name": "Sarah Chen",
+                "role": "Principal Designer",
+                "desc": "Led the visual identity overhaul, focusing on botanical motifs.",
+                "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=2544&auto=format&fit=crop"
+            },
+            {
+                "name": "Marcus Thorne",
+                "role": "Full Stack Engineer",
+                "desc": "Implemented the core e-commerce engine and patient database.",
+                "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2544&auto=format&fit=crop"
+            }
+        ]
+    },
+    {
+        "id": "eyesavers-digital",
+        "title": "Eyesavers <br> Opticians",
+        "subtitle": "Precision Vision Retail Ecosystem",
+        "category": "E-commerce & Health",
+        "description": "A sophisticated digital storefront and clinical booking integration for Sri Lanka's premier optometry chain, focusing on clarity, precision, and user-centric retail.",
+        "mainImage": "https://images.unsplash.com/photo-1511511450040-677116ff389e?q=80&w=2670&auto=format&fit=crop",
+        "location": "Colombo, SL",
+        "year": "2025",
+        "url": "https://eyesavers.lk",
+        "role": "Product Design & Engineering",
+        "timeline": "5 Months",
+        "meta": {
+            "build": "Next.js 14",
+            "systems": "Omnichannel Inventory",
+            "theme": "Optical Clarity",
+            "engineering": "VTO (Virtual Try-On) Integration"
+        },
+        "capabilities": [
+            {
+                "number": "01",
+                "title": "E-commerce Engine",
+                "description": "High-performance eyewear marketplace with complex prescription logic."
+            },
+            {
+                "number": "02",
+                "title": "Clinical Booking",
+                "description": "Real-time appointment scheduling for optometric consultations."
+            },
+            {
+                "number": "03",
+                "title": "Virtual Try-On",
+                "description": "AR-driven facial mapping for digital frame fitting."
+            },
+            {
+                "number": "04",
+                "title": "Inventory Sync",
+                "description": "Real-time bridge between physical branches and the digital warehouse."
+            }
+        ],
+        "strategy": {
+            "headline": "Clarity <br> in <br>Every <br> Interaction",
+            "body": "We stripped away the clutter often found in medical retail to create a 'glass-morphic' UI that mirrors the product itself: transparent, precise, and essential.",
+            "metricLabel": "Conversion Rate",
+            "metricValue": "+65%",
+            "metricDesc": "Increase in online frame purchases and lens upgrades",
+            "visualImage": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?q=80&w=2670&auto=format&fit=crop"
+        },
+        "team": [
+            {
+                "name": "Arjun Perera",
+                "role": "Lead UI/UX",
+                "desc": "Crafted the minimalist visual language and prescription flow.",
+                "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=2544&auto=format&fit=crop"
+            },
+            {
+                "name": "Elena Rodriguez",
+                "role": "CTO",
+                "desc": "Architected the AR fitting engine and ERP integration.",
+                "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2544&auto=format&fit=crop"
+            }
+        ]
+    },
+    {
+        "id": "heaven-garden-kandy",
+        "title": "Heaven Garden <br> Inn",
+        "subtitle": "Boutique Hospitality Ecosystem",
+        "category": "Identity & Direct Commerce",
+        "description": "A high-fidelity digital transformation for a luxury boutique retreat in Kandy, bridging the gap between serene hillside hospitality and high-conversion booking architecture.",
+        "mainImage": "https://heavengardeninn.com/wp-content/uploads/2024/01/Heaven-Garden-Inn-Kandy-Slider.jpg",
+        "location": "Kandy, SL",
+        "year": "2024",
+        "url": "https://heavengardeninn.com",
+        "role": "Lead Strategy & Production",
+        "timeline": "4 Months",
+        "meta": {
+            "build": "High-Performance Stack",
+            "systems": "Direct-to-Owner Booking",
+            "theme": "Tropical Minimalism",
+            "engineering": "Frictionless UI/UX"
+        },
+        "capabilities": [
+            {
+                "number": "01",
+                "title": "Visual Narrative",
+                "description": "Crafting an 'Advert Level' brand identity that captures the cinematic landscape of the property."
+            },
+            {
+                "number": "02",
+                "title": "Booking Architecture",
+                "description": "Implementation of a streamlined, high-speed interface to eliminate third-party booking friction."
+            },
+            {
+                "number": "03",
+                "title": "Operational Logic",
+                "description": "Integration of automated lead management and local SEO strategy to dominate the Kandy market."
+            },
+            {
+                "number": "04",
+                "title": "Tech Consultation",
+                "description": "Full audit and restructuring of digital infrastructure for maximum global visibility."
+            }
+        ],
+        "strategy": {
+            "headline": "Elegance <br> Architected <br> by <br> Calm",
+            "body": "The objective was to transform a traditional guesthouse into a global boutique brand. We engineered a 'Calm-Tech' interface that mirrors the physical experience of the retreat: silent, efficient, and iconic.",
+            "metricLabel": "Direct Bookings",
+            "metricValue": "+85%",
+            "metricDesc": "Reduction in OTA dependency through high-performance direct booking systems.",
+            "visualImage": "https://heavengardeninn.com/wp-content/uploads/2024/01/Heaven-Garden-Inn-Kandy-Facilities.jpg"
+        },
+        "team": [
+            {
+                "name": "Design Department",
+                "role": "Principal Studio",
+                "desc": "End-to-end digital architecture, technical strategy, and visual production.",
+                "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2544&auto=format&fit=crop"
+            }
+        ]
+    },
+    {
+        "id": "ccc-kandy-digital",
+        "title": "CCC Kandy",
+        "subtitle": "Healthcare Consultation Ecosystem",
+        "category": "Medical Tech & Platform",
+        "description": "A high-fidelity digital transformation for one of Sri Lanka’s pioneering healthcare institutions, modernizing a 40-year legacy into a seamless, multi-channel clinical hub.",
+        "mainImage": "https://ccckandy.lk/wp-content/uploads/2023/12/59-Ground-floor-copy.jpg",
+        "location": "Kandy, SL",
+        "year": "2024",
+        "url": "https://ccckandy.lk",
+        "role": "Lead Design & Strategy",
+        "timeline": "6 Months",
+        "meta": {
+            "build": "Clinical Consultation Stack",
+            "systems": "E-Channelling Engine",
+            "theme": "Medical Precision",
+            "engineering": "High-Density Data Management"
+        },
+        "capabilities": [
+            {
+                "number": "01",
+                "title": "E-Channelling",
+                "description": "Architecting a direct bridge to over 45 medical specializations for real-time patient appointments."
+            },
+            {
+                "number": "02",
+                "title": "Laboratory Logic",
+                "description": "A comprehensive digital catalog for pathology and diagnostic services with automated pricing integration."
+            },
+            {
+                "number": "03",
+                "title": "Clinical Branding",
+                "description": "Modernizing a heritage medical brand to match the standards of a state-of-the-art diagnostic facility."
+            },
+            {
+                "number": "04",
+                "title": "Data Infrastructure",
+                "description": "Streamlining the digital footprint for 40 years of medical excellence across multiple physical facilities."
+            }
+        ],
+        "strategy": {
+            "headline": "Legacy <br> Built <br> on <br>Precision",
+            "body": "The challenge was to migrate a 40-year institution into the digital frontier. We engineered a platform that simplifies complex medical channelling, turning a high-density diagnostic center into a friction-less patient experience.",
+            "metricLabel": "System Adoption",
+            "metricValue": "Elite",
+            "metricDesc": "Successful digital integration for the largest and most reputed private center in Kandy.",
+            "visualImage": "https://ccckandy.lk/wp-content/uploads/2023/12/59-Scenary-2-copy.jpg"
+        },
+        "team": [
+            {
+                "name": "Design Department",
+                "role": "Principal Studio",
+                "desc": "Managed the full-scale digital audit, platform architecture, and heritage brand modernization.",
+                "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2544&auto=format&fit=crop"
+            }
+        ]
+    },
+    {
+        "id": "kandy-friend-in-need",
+        "title": "Kandy Friend-In-Need",
+        "subtitle": "Philanthropic Legacy Platform",
+        "category": "Social Impact & Web Presence",
+        "description": "A dignified digital gateway for one of Sri Lanka’s oldest social service organizations (Est. 1837), designed to honor a two-century legacy while modernizing donor engagement.",
+        "mainImage": "https://kandyfriendinneed.org/wp-content/uploads/2023/12/Ampitiya-Elders-Home-Cottages.jpg",
+        "location": "Kandy, SL",
+        "year": "2024",
+        "url": "https://kandyfriendinneed.org",
+        "role": "Lead Design & Strategy",
+        "timeline": "4 Months",
+        "meta": {
+            "build": "Philanthropic Stack",
+            "systems": "Donation Architecture",
+            "theme": "Compassionate Minimalism",
+            "engineering": "Accessibility Optimized"
+        },
+        "capabilities": [
+            {
+                "number": "01",
+                "title": "Legacy Narrative",
+                "description": "Digitizing nearly 200 years of history into a cohesive visual story for global philanthropic outreach."
+            },
+            {
+                "number": "02",
+                "title": "Project Management",
+                "description": "Structured digital showcasing of diverse community initiatives including the Ampitiya and Mulgampola havens."
+            },
+            {
+                "number": "03",
+                "title": "Donor Experience",
+                "description": "Engineering a friction-less donation interface to support the society’s mission across ethnicity and religion."
+            },
+            {
+                "number": "04",
+                "title": "Community Portal",
+                "description": "A centralized hub for news, constitutional transparency, and organizational transparency for stakeholders."
+            }
+        ],
+        "strategy": {
+            "headline": "Legacy <br> Built <br> on <br>Solace",
+            "body": "The challenge was to translate a centuries-old beacon of compassion into a modern digital standard. We engineered a platform that balances the weight of history with the accessibility of modern web architecture.",
+            "metricLabel": "Legacy Protection",
+            "metricValue": "Dignified",
+            "metricDesc": "Preserving the sanctity of the golden generation through world-class digital standards.",
+            "visualImage": "https://kandyfriendinneed.org/wp-content/uploads/2023/12/Mulgampola-Elders-Home.jpg"
+        },
+        "team": [
+            {
+                "name": "Design Department",
+                "role": "Principal Studio",
+                "desc": "Full-scale digital audit, brand storytelling, and philanthropic interface engineering.",
+                "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2544&auto=format&fit=crop"
+            }
+        ]
+    },
+    {
+        "id": "legacy-education-academy",
+        "title": "Legacy <br> Education",
+        "subtitle": "Global Academic Design System",
+        "category": "EdTech & Learning Platform",
+        "description": "A comprehensive digital ecosystem for a premier academic academy, focused on transforming grades into opportunities through exam-focused methodologies and high-fidelity learning tools.",
+        "mainImage": "https://legacyeducation.academy/wp-content/uploads/2024/01/Legacy-Education-Hero-Banner.jpg",
+        "location": "Global / Virtual",
+        "year": "2024",
+        "url": "https://legacyeducation.academy",
+        "role": "Lead Strategy & Engineering",
+        "timeline": "5 Months",
+        "meta": {
+            "build": "LMS & Educational Stack",
+            "systems": "Assessment Frameworks",
+            "theme": "Academic Excellence",
+            "engineering": "Scale-Optimized Architecture"
+        },
+        "capabilities": [
+            {
+                "number": "01",
+                "title": "Academic Strategy",
+                "description": "Architecting a learning journey that aligns concept mastery with global assessment objectives (AO1–AO3)."
+            },
+            {
+                "number": "02",
+                "title": "LMS Engineering",
+                "description": "Implementation of a streamlined student portal for course delivery, timing drills, and mark-scheme synchronization."
+            },
+            {
+                "number": "03",
+                "title": "Exam Intelligence",
+                "description": "Integrating data-driven past-paper reviews and model answer structures directly into the user experience."
+            },
+            {
+                "number": "04",
+                "title": "Digital Pedagogy",
+                "description": "Modernizing Edexcel and Cambridge syllabi delivery through small-group logic and catch-up automation."
+            }
+        ],
+        "strategy": {
+            "headline": "Transformation <br> Through <br>Precision <br> Learning",
+            "body": "The goal was to move beyond simple tutoring and build a high-performance academic engine. We engineered a platform that makes students 'exam-smart,' focusing on the architecture of how marks are earned in a competitive global landscape.",
+            "metricLabel": "Study Impact",
+            "metricValue": "5000+",
+            "metricDesc": "Verified study hours delivered through the new digital academic ecosystem.",
+            "visualImage": "https://legacyeducation.academy/wp-content/uploads/2024/01/Legacy-Education-Courses-Display.jpg"
+        },
+        "team": [
+            {
+                "name": "Design Department",
+                "role": "Principal Studio",
+                "desc": "Managed the full-scale platform engineering, brand narrative, and academic UI/UX design.",
+                "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2544&auto=format&fit=crop"
+            }
+        ]
+    },
+    {
+        "id": "trilium-language-centre",
+        "title": "Trilium <br> Language Centre",
+        "subtitle": "Linguistic Growth Ecosystem",
+        "category": "Education & Communication",
+        "description": "A high-fidelity digital platform for a premier language institution, engineered to build student confidence through interactive learning environments and tailored pedagogical paths.",
+        "mainImage": "https://triliumlc.com/wp-content/uploads/2024/01/Trilium-Language-Centre-Hero.jpg",
+        "location": "Global / Virtual",
+        "year": "2024",
+        "url": "https://triliumlc.com",
+        "role": "Lead Strategy & Engineering",
+        "timeline": "3 Months",
+        "meta": {
+            "build": "Interactive Learning Stack",
+            "systems": "Custom Pedagogy Logic",
+            "theme": "Vibrant Academic",
+            "engineering": "User-Centric Architecture"
+        },
+        "capabilities": [
+            {
+                "number": "01",
+                "title": "Elocution Strategy",
+                "description": "Architecting a digital roadmap for eloquent speaking and writing, designed for high-impact communication."
+            },
+            {
+                "number": "02",
+                "title": "Personalized Logic",
+                "description": "Engineering custom-styled learning paths that adapt to the unique linguistic needs and unique growth curves of each student."
+            },
+            {
+                "number": "03",
+                "title": "Interactive Interface",
+                "description": "Transforming traditional grammar mastery into an engaging, high-fidelity digital experience."
+            },
+            {
+                "number": "04",
+                "title": "Hybrid Infrastructure",
+                "description": "Developing a seamless bridge between online and in-person learning modules for maximum flexibility."
+            }
+        ],
+        "strategy": {
+            "headline": "Confidence <br> Defined <br> Through <br>Expression",
+            "body": "The objective was to create a digital space that feels as supportive as a classroom. We engineered a platform that prioritizes the 'Confidence Curve,' ensuring that every interaction fosters linguistic empowerment and academic success.",
+            "metricLabel": "Success Rate",
+            "metricValue": "Elite",
+            "metricDesc": "High customer satisfaction through tailored educational strategies and personalized attention.",
+            "visualImage": "https://triliumlc.com/wp-content/uploads/2024/01/Trilium-Classroom-Context.jpg"
+        },
+        "team": [
+            {
+                "name": "Design Department",
+                "role": "Principal Studio",
+                "desc": "Full-scale platform engineering, visual branding, and educational UI/UX design.",
+                "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2544&auto=format&fit=crop"
+            }
+        ]
+    },
+    {
+        "id": "beevibe-cleaning",
+        "title": "BeeVibe <br> Cleaning",
+        "subtitle": "Residential Hygiene Infrastructure",
+        "category": "Service Operations & Digital Presence",
+        "description": "A streamlined digital interface for an Australian-based residential cleaning service, engineered to project reliability, precision, and a zero-friction booking experience.",
+        "mainImage": "https://images.unsplash.com/photo-1581578731548-c64695cc6954?q=80&w=2670&auto=format&fit=crop",
+        "location": "Box Hill VIC, AU",
+        "year": "2025",
+        "url": "https://beevibe.com.au",
+        "role": "Lead Strategy & Engineering",
+        "timeline": "3 Months",
+        "meta": {
+            "build": "Service Management Stack",
+            "systems": "Automated Dispatch Logic",
+            "theme": "Spotless Minimalism",
+            "engineering": "Efficiency-First Architecture"
+        },
+        "capabilities": [
+            {
+                "number": "01",
+                "title": "Service Architecture",
+                "description": "Designing a digital framework that prioritizes neatness and quick-response times for premium residential clients."
+            },
+            {
+                "number": "02",
+                "title": "Dispatch Logic",
+                "description": "Engineering an automated coordination system between professional cleaning teams and client schedules."
+            },
+            {
+                "number": "03",
+                "title": "Trust Infrastructure",
+                "description": "Architecting a visual language that emphasizes attention to detail and professional accountability."
+            },
+            {
+                "number": "04",
+                "title": "Growth Engineering",
+                "description": "Optimizing local presence in the Victoria market to drive high-intent residential leads."
+            }
+        ],
+        "strategy": {
+            "headline": "Spotless <br> Results <br> Through <br>Digital Logic",
+            "body": "The challenge was to take a physical service and give it a 'Digital First' heartbeat. We engineered a platform that makes the cleaning process invisible to the client—managing the friction of scheduling so they can simply enjoy the sparkle.",
+            "metricLabel": "Service Efficiency",
+            "metricValue": "Spotless",
+            "metricDesc": "Verified professional team performance with a focus on speed and surgical attention to detail.",
+            "visualImage": "https://images.unsplash.com/photo-1527515545081-5db817172677?q=80&w=2670&auto=format&fit=crop"
+        },
+        "team": [
+            {
+                "name": "Design Department",
+                "role": "Principal Studio",
+                "desc": "Managed the full-scale service audit, technical strategy, and operational UI/UX design.",
+                "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2544&auto=format&fit=crop"
+            }
+        ]
+    }
+]

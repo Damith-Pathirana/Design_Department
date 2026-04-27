@@ -4,7 +4,7 @@ import { ArrowUpRight, ArrowRight } from "lucide-react";
 
 export default function Journal() {
     return (
-        <section id="journal" className="py-24 relative border-b border-border-light bg-paper text-void">
+        <section id="journal" className="py-12 relative border-b border-border-light bg-paper text-void">
             <div className="absolute inset-0 pointer-events-none flex justify-center overflow-hidden z-0 hidden md:flex">
                 <div className="w-full max-w-screen-2xl px-4 md:px-8 relative h-full">
                     <div className="absolute inset-y-0 left-4 md:left-8 w-px bg-black/5">

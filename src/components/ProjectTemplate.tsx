@@ -206,9 +206,11 @@ export default function ProjectTemplate({
                                 <span className="inline-block px-3 py-1 bg-electric/10 text-electric text-[10px] font-black uppercase tracking-widest rounded-sm border border-electric/20 font-label">{subtitle}</span>
                             </div>
 
-                            <h1 className="gs-reveal-text text-4xl md:text-6xl lg:text-7xl xl:text-8xl leading-[1.05] tracking-tighter font-display font-black text-zinc-900 max-w-4xl italic uppercase">
-                                {title}
-                            </h1>
+                            <h1
+                                className="gs-reveal-text leading-[1.0] tracking-tighter font-display font-black text-zinc-900 max-w-4xl italic uppercase"
+                                style={{ fontSize: 'clamp(2rem, 6vw, 5.5rem)' }}
+                                dangerouslySetInnerHTML={{ __html: title }}
+                            />
 
                             <div className="mt-12 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-8 items-end">
                                 <p className="text-sm text-zinc-600 max-w-sm leading-relaxed gs-fade-up font-medium">
@@ -286,9 +288,10 @@ export default function ProjectTemplate({
                     <div className="col-span-1 md:col-span-5 p-8 md:p-16 flex flex-col justify-center border-r border-[#E2E0D8] relative">
                         <div className="absolute top-1/2 left-0 w-8 h-[1px] bg-electric -ml-4 hidden md:block"></div>
 
-                        <h2 className="text-3xl md:text-5xl tracking-tight font-display font-black uppercase italic text-zinc-900 mb-8 max-w-[15ch] gs-scroll-reveal-text">
-                            {strategy.headline}
-                        </h2>
+                        <h2
+                            className="text-3xl md:text-5xl tracking-tight font-display font-black uppercase italic text-zinc-900 mb-8 max-w-[15ch] gs-fade-up-scroll"
+                            dangerouslySetInnerHTML={{ __html: strategy.headline }}
+                        />
                         <p className="text-sm text-zinc-600 font-medium leading-relaxed mb-12 max-w-md gs-fade-up-scroll">
                             {strategy.body}
                         </p>

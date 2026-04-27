@@ -1,9 +1,37 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect, useRef } from 'react';
 import { ArrowUpRight, ArrowRight } from "lucide-react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Contact() {
+    const containerRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            gsap.registerPlugin(ScrollTrigger);
+        }
+
+        let ctx = gsap.context(() => {
+            gsap.to('.gs-reveal-text', {
+                y: 0,
+                duration: 1.8,  // Premium slow entrance
+                stagger: 0.15,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: '.gs-reveal-wrapper',
+                    start: "top 92%", // Earlier trigger
+                    toggleActions: "play none none none"
+                }
+            });
+        }, containerRef);
+
+        return () => ctx.revert();
+    }, []);
+
     return (
-        <footer id="contact" className="pt-24 pb-12 relative overflow-hidden bg-paper text-void">
+        <footer id="contact" className="pt-16 pb-12 relative overflow-hidden bg-paper text-void" ref={containerRef}>
             <div className="absolute inset-0 pointer-events-none flex justify-center overflow-hidden z-0 hidden md:flex">
                 <div className="w-full max-w-screen-2xl px-4 md:px-8 relative h-full">
                     <div className="absolute inset-y-0 left-4 md:left-8 w-px bg-black/5">
@@ -18,9 +46,9 @@ export default function Contact() {
             </div>
 
             <div className="max-w-screen-2xl mx-auto px-4 md:px-8 relative">
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 mb-24">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 mb-12">
                     <div className="lg:col-span-6 flex flex-col justify-between gs-reveal-wrapper">
-                        <h2 className="text-6xl md:text-8xl lg:text-[10rem] font-display font-black uppercase leading-[0.8] tracking-tighter italic">
+                        <h2 className="text-[clamp(3.5rem,11vw,6rem)] font-display font-black uppercase leading-[0.8] tracking-tighter italic">
                             <div className="overflow-hidden"><span className="block translate-y-full gs-reveal-text">Let's Build</span></div>
                             <div className="overflow-hidden"><span className="block translate-y-full gs-reveal-text">Something</span></div>
                             <div className="overflow-hidden flex items-end">
@@ -68,7 +96,7 @@ export default function Contact() {
 
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-8 border-t border-border-light pt-12 items-end">
                     <div className="md:col-span-6">
-                        <a href="#" className="text-4xl md:text-6xl font-black tracking-tighter flex items-center gap-1 mb-6 font-display italic">
+                        <a href="/" className="text-4xl md:text-6xl font-black tracking-tighter flex items-center gap-1 mb-6 font-display italic hover:opacity-80 transition-opacity">
                             Design<span className="text-electric leading-none relative top-[-4px] not-italic">*</span>
                         </a>
                         <div className="text-xs font-semibold space-y-1 text-gray-500 font-label tracking-widest uppercase">

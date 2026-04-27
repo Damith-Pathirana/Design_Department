@@ -1,0 +1,101 @@
+{
+    "hero": {
+        "tagline": "Accepting New Projects - 2026",
+        "title": {
+            "part1": "build ",
+            "part2": "iconic",
+            "highlight": "brands."
+        },
+        "description": "Where raw artistic expression meets elite digital engineering. We architect resilient brand structures using advanced, precision-driven methodologies.",
+        "primaryBtn": "Explore Work",
+        "secondaryBtn": "Our Studio",
+        "image1": "https://png.pngtree.com/png-clipart/20250109/original/pngtree-black-monolith-sleek-and-modern-png-image_18965839.png",
+        "image2": "https://static.vecteezy.com/system/resources/previews/017/052/122/non_2x/shape-glassmorphism-transparent-background-free-png.png",
+        "status": "Optimal",
+        "capacity": "42%"
+    },
+    "services": {
+        "tagline": "01",
+        "header": "What We Do",
+        "description": "We help visionary founders and teams build iconic brands that stand out and stand for something.",
+        "items": [
+            {
+                "id": "01",
+                "tag": "DEVELOPMENT",
+                "title": "WEB ARCHITECTURE",
+                "description": "We build high-performance, custom websites tailored to your business goals. From high-end corporate sites to complex e-commerce platforms, we deliver clean code and seamless user experiences."
+            },
+            {
+                "id": "02",
+                "tag": "DESIGN",
+                "title": "IDENTITY SYSTEMS",
+                "description": "We create the visual foundation of your brand. From iconic logos to full brand guidelines, we ensure your business looks professional and stays consistent across every digital touchpoint."
+            },
+            {
+                "id": "03",
+                "tag": "MARKETING",
+                "title": "GROWTH STRATEGY",
+                "description": "Targeted digital marketing that drives results. We manage your social media, SEO, and paid ad campaigns to increase your visibility and turn visitors into loyal customers."
+            },
+            {
+                "id": "04",
+                "tag": "AUTOMATION",
+                "title": "DIGITAL WORKFLOWS",
+                "description": "We optimize your business operations using smart tech. By integrating tools like HubSpot and automated workflows, we help you save time and manage your leads more efficiently."
+            }
+        ]
+    },
+    "about": {
+        "tagline": "03",
+        "title": "About Design",
+        "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2669&auto=format&fit=crop",
+        "highlight": "Design",
+        "headline": "We're an artistic engineering studio built on code, culture and collaboration.",
+        "description": "From our studios we partner with forward-thinkers to create digital web architectures that move people using React and WebGL mechanics.",
+        "locations": [
+            "MODERN TECH — ALWAYS AHEAD",
+            "PREMIUM QUALITY — WORLD-CLASS FINISH",
+            "UNLIMITED SCALE — BUILT TO GROW"
+        ]
+    },
+    "showcase": {
+        "intro": {
+            "title1": "Creating Digital Art.",
+            "title2": "We Build Experience."
+        },
+        "archive": {
+            "tagline": "01 / Selection",
+            "title": "The Selected Archive",
+            "projectIds": [
+                "lumina-vision",
+                "fintech-grid",
+                "bowatte",
+                "quartz-unit",
+                "neural-base",
+                "bowatte-heritage",
+                "ccc-kandy-digital",
+                "kandy-friend-in-need",
+                "heaven-garden-kandy"
+            ]
+        },
+        "message": {
+            "text": "Design Department was established to bridge the gap between high-performance engineering and iconic visual storytelling.",
+            "reveal": "...Architecting digital experiences, one pixel at a time."
+        },
+        "video": {
+            "tagline": "BEYOND THE CODE,",
+            "title": "WE <br> PRODUCE <br>THE VISUAL.",
+            "image": "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1777243351713-WhatsApp-Video-2026-04-27-at-04.11.57.mp4"
+        },
+        "capabilities": {
+            "title": "Other SPECIALIZATIONs",
+            "items": [
+                "4K CINEMATOGRAPHY",
+                "DATA ANALYSIS",
+                "BUSINESS PROFILES",
+                "TECH CONSULTATION",
+                "AI AUTOMATIONS"
+            ]
+        }
+    }
+}
