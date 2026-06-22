@@ -8,6 +8,33 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default function Contact() {
     const containerRef = useRef<HTMLDivElement>(null);
 
+    const [isSubmitting, setIsSubmitting] = React.useState(false);
+    const [isSuccess, setIsSuccess] = React.useState(false);
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+
+        const formData = new FormData(e.currentTarget);
+
+        formData.append("access_key", "5bdf5f85-8b9a-4f74-b3d1-cdfed4a118c7");
+
+        try {
+            const res = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            }).then((res) => res.json());
+
+            if (res.success) {
+                setIsSuccess(true);
+            }
+        } catch (err) {
+            console.error("Form error:", err);
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
     useEffect(() => {
         if (typeof window !== 'undefined') {
             gsap.registerPlugin(ScrollTrigger);
@@ -59,45 +86,62 @@ export default function Contact() {
                     </div>
 
                     <div className="lg:col-span-4 lg:col-start-8">
-                        <form className="space-y-8 text-xs font-semibold uppercase tracking-widest font-label">
-                            <div className="grid grid-cols-2 gap-8">
-                                <div className="relative border-b-2 border-void/10 pb-4">
-                                    <span className="block text-[10px] text-gray-400 mb-2">01 / Name</span>
-                                    <input suppressHydrationWarning type="text" placeholder="Full Name" className="w-full bg-transparent outline-none placeholder-gray-300 focus:text-black transition-colors font-sans" />
+                        {isSuccess ? (
+                            <div className="h-full flex flex-col justify-center items-center text-center p-8 border-2 border-electric/20 rounded-xl bg-electric/5">
+                                <div className="w-16 h-16 rounded-full bg-electric flex items-center justify-center text-void mb-6">
+                                    <ArrowUpRight strokeWidth={3} className="w-8 h-8" />
                                 </div>
-                                <div className="relative border-b-2 border-void/10 pb-4">
-                                    <span className="block text-[10px] text-gray-400 mb-2">02 / Email</span>
-                                    <input suppressHydrationWarning type="email" placeholder="Email Address" className="w-full bg-transparent outline-none placeholder-gray-300 focus:text-black transition-colors font-sans" />
-                                </div>
+                                <h3 className="text-2xl font-display font-black uppercase italic mb-2">Message Sent</h3>
+                                <p className="text-sm text-gray-500 font-medium">We have received your brief and will be in touch shortly.</p>
+                                <button onClick={() => setIsSuccess(false)} className="mt-8 text-[10px] font-black uppercase tracking-[0.2em] text-electric hover:text-void transition-colors underline">Send another</button>
                             </div>
-                            <div className="relative border-b-2 border-void/10 pb-4">
-                                <span className="block text-[10px] text-gray-400 mb-2">03 / Organisation</span>
-                                <input suppressHydrationWarning type="text" placeholder="Company Name" className="w-full bg-transparent outline-none placeholder-gray-300 focus:text-black transition-colors font-sans" />
-                            </div>
-                            <div className="relative border-b-2 border-void/10 pb-4 flex flex-col">
-                                <span className="block text-[10px] text-gray-400 mb-2">04 / Brief</span>
-                                <div className="flex items-center">
-                                    <input suppressHydrationWarning type="text" placeholder="Tell us about your project" className="w-full bg-transparent outline-none placeholder-gray-300 focus:text-black transition-colors font-sans" />
-                                    <ArrowRight className="text-electric w-4 h-4 shrink-0" />
-                                </div>
-                            </div>
-
-                            <div className="flex justify-end pt-4">
-                                <button type="button" className="group inline-flex items-center gap-3 px-10 py-4 bg-electric text-void rounded-md text-[13px] font-black uppercase tracking-[0.1em] transition-all hover:bg-[#f0d060] font-label shadow-lg shadow-electric/20">
-                                    Send Brief
-                                    <div className="w-6 h-6 rounded-full bg-void flex items-center justify-center text-electric scale-75 group-hover:scale-110 transition-transform">
-                                        <ArrowUpRight strokeWidth={3} className="w-3.5 h-3.5" />
+                        ) : (
+                            <form onSubmit={handleSubmit} className="space-y-8 text-xs font-semibold uppercase tracking-widest font-label">
+                                <div className="grid grid-cols-2 gap-8">
+                                    <div className="relative border-b-2 border-void/10 pb-4">
+                                        <span className="block text-[10px] text-gray-400 mb-2">01 / Name</span>
+                                        <input required name="name" suppressHydrationWarning type="text" placeholder="Full Name" className="w-full bg-transparent outline-none placeholder-gray-300 focus:text-black transition-colors font-sans" />
                                     </div>
-                                </button>
-                            </div>
-                        </form>
+                                    <div className="relative border-b-2 border-void/10 pb-4">
+                                        <span className="block text-[10px] text-gray-400 mb-2">02 / Email</span>
+                                        <input required name="email" suppressHydrationWarning type="email" placeholder="Email Address" className="w-full bg-transparent outline-none placeholder-gray-300 focus:text-black transition-colors font-sans" />
+                                    </div>
+                                </div>
+                                <div className="relative border-b-2 border-void/10 pb-4">
+                                    <span className="block text-[10px] text-gray-400 mb-2">03 / Organisation</span>
+                                    <input name="organisation" suppressHydrationWarning type="text" placeholder="Company Name" className="w-full bg-transparent outline-none placeholder-gray-300 focus:text-black transition-colors font-sans" />
+                                </div>
+                                <div className="relative border-b-2 border-void/10 pb-4 flex flex-col">
+                                    <span className="block text-[10px] text-gray-400 mb-2">04 / Brief</span>
+                                    <div className="flex items-center">
+                                        <input required name="message" suppressHydrationWarning type="text" placeholder="Tell us about your project" className="w-full bg-transparent outline-none placeholder-gray-300 focus:text-black transition-colors font-sans" />
+                                        <ArrowRight className="text-electric w-4 h-4 shrink-0" />
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-end pt-4">
+                                    <button
+                                        disabled={isSubmitting}
+                                        type="submit"
+                                        className="group inline-flex items-center gap-3 px-10 py-4 bg-electric text-void rounded-md text-[13px] font-black uppercase tracking-[0.1em] transition-all hover:bg-[#f0d060] font-label shadow-lg shadow-electric/20 disabled:opacity-50 disabled:cursor-not-allowed"
+                                    >
+                                        {isSubmitting ? "Sending..." : "Send Brief"}
+                                        {!isSubmitting && (
+                                            <div className="w-6 h-6 rounded-full bg-void flex items-center justify-center text-electric scale-75 group-hover:scale-110 transition-transform">
+                                                <ArrowUpRight strokeWidth={3} className="w-3.5 h-3.5" />
+                                            </div>
+                                        )}
+                                    </button>
+                                </div>
+                            </form>
+                        )}
                     </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-8 border-t border-border-light pt-12 items-end">
                     <div className="md:col-span-6">
                         <a href="/" className="text-4xl md:text-6xl font-black tracking-tighter flex items-center gap-1 mb-6 font-display italic hover:opacity-80 transition-opacity">
-                            Design<span className="text-electric leading-none relative top-[-4px] not-italic">*</span>
+                            Design Dept<span className="text-electric leading-none relative top-[-4px] not-italic">*</span>
                         </a>
                         <div className="text-xs font-semibold space-y-1 text-gray-500 font-label tracking-widest uppercase">
                             <p>hello@designdepartment.com</p>

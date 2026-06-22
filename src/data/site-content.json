@@ -1,101 +1,422 @@
 {
-    "hero": {
-        "tagline": "Accepting New Projects - 2026",
-        "title": {
-            "part1": "build ",
-            "part2": "iconic",
-            "highlight": "brands."
-        },
-        "description": "Where raw artistic expression meets elite digital engineering. We architect resilient brand structures using advanced, precision-driven methodologies.",
-        "primaryBtn": "Explore Work",
-        "secondaryBtn": "Our Studio",
-        "image1": "https://png.pngtree.com/png-clipart/20250109/original/pngtree-black-monolith-sleek-and-modern-png-image_18965839.png",
-        "image2": "https://static.vecteezy.com/system/resources/previews/017/052/122/non_2x/shape-glassmorphism-transparent-background-free-png.png",
-        "status": "Optimal",
-        "capacity": "42%"
+  "hero": {
+    "tagline": "Accepting New Projects - 2026",
+    "title": {
+      "part1": "build ",
+      "part2": "iconic",
+      "highlight": "brands."
     },
-    "services": {
-        "tagline": "01",
-        "header": "What We Do",
-        "description": "We help visionary founders and teams build iconic brands that stand out and stand for something.",
-        "items": [
-            {
-                "id": "01",
-                "tag": "DEVELOPMENT",
-                "title": "WEB ARCHITECTURE",
-                "description": "We build high-performance, custom websites tailored to your business goals. From high-end corporate sites to complex e-commerce platforms, we deliver clean code and seamless user experiences."
-            },
-            {
-                "id": "02",
-                "tag": "DESIGN",
-                "title": "IDENTITY SYSTEMS",
-                "description": "We create the visual foundation of your brand. From iconic logos to full brand guidelines, we ensure your business looks professional and stays consistent across every digital touchpoint."
-            },
-            {
-                "id": "03",
-                "tag": "MARKETING",
-                "title": "GROWTH STRATEGY",
-                "description": "Targeted digital marketing that drives results. We manage your social media, SEO, and paid ad campaigns to increase your visibility and turn visitors into loyal customers."
-            },
-            {
-                "id": "04",
-                "tag": "AUTOMATION",
-                "title": "DIGITAL WORKFLOWS",
-                "description": "We optimize your business operations using smart tech. By integrating tools like HubSpot and automated workflows, we help you save time and manage your leads more efficiently."
-            }
-        ]
+    "description": "Where raw artistic expression meets elite digital engineering. We architect resilient brand structures using advanced, precision-driven methodologies.",
+    "primaryBtn": "Explore Work",
+    "secondaryBtn": "Our Studio",
+    "image1": "https://png.pngtree.com/png-clipart/20250109/original/pngtree-black-monolith-sleek-and-modern-png-image_18965839.png",
+    "image2": "https://static.vecteezy.com/system/resources/previews/017/052/122/non_2x/shape-glassmorphism-transparent-background-free-png.png",
+    "status": "Optimal",
+    "capacity": "42%"
+  },
+  "services": {
+    "tagline": "01",
+    "header": "What We Do",
+    "description": "We help visionary founders and teams build iconic brands that stand out and stand for something.",
+    "items": [
+      {
+        "id": "01",
+        "tag": "DEVELOPMENT",
+        "title": "WEB ARCHITECTURE",
+        "description": "We build high-performance, custom websites tailored to your business goals. From high-end corporate sites to complex e-commerce platforms, we deliver clean code and seamless user experiences."
+      },
+      {
+        "id": "02",
+        "tag": "DESIGN",
+        "title": "IDENTITY SYSTEMS",
+        "description": "We create the visual foundation of your brand. From iconic logos to full brand guidelines, we ensure your business looks professional and stays consistent across every digital touchpoint."
+      },
+      {
+        "id": "03",
+        "tag": "MARKETING",
+        "title": "GROWTH STRATEGY",
+        "description": "Targeted digital marketing that drives results. We manage your social media, SEO, and paid ad campaigns to increase your visibility and turn visitors into loyal customers."
+      },
+      {
+        "id": "04",
+        "tag": "AUTOMATION",
+        "title": "DIGITAL WORKFLOWS",
+        "description": "We optimize your business operations using smart tech. By integrating tools like HubSpot and automated workflows, we help you save time and manage your leads more efficiently."
+      }
+    ]
+  },
+  "about": {
+    "tagline": "03",
+    "title": "About Design",
+    "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2669&auto=format&fit=crop",
+    "highlight": "Design",
+    "headline": "We're an artistic engineering studio built on code, culture and collaboration.",
+    "description": "From our studios we partner with forward-thinkers to create digital web architectures that move people using React and WebGL mechanics.",
+    "locations": [
+      "MODERN TECH — ALWAYS AHEAD",
+      "PREMIUM QUALITY — WORLD-CLASS FINISH",
+      "UNLIMITED SCALE — BUILT TO GROW"
+    ]
+  },
+  "showcase": {
+    "intro": {
+      "title1": "Creating Digital Art.",
+      "title2": "We Build Experience."
     },
-    "about": {
-        "tagline": "03",
-        "title": "About Design",
-        "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2669&auto=format&fit=crop",
-        "highlight": "Design",
-        "headline": "We're an artistic engineering studio built on code, culture and collaboration.",
-        "description": "From our studios we partner with forward-thinkers to create digital web architectures that move people using React and WebGL mechanics.",
-        "locations": [
-            "MODERN TECH — ALWAYS AHEAD",
-            "PREMIUM QUALITY — WORLD-CLASS FINISH",
-            "UNLIMITED SCALE — BUILT TO GROW"
-        ]
+    "archive": {
+      "tagline": "01 / Selection",
+      "title": "The Selected Archive",
+      "projectIds": [
+        "lumina-vision",
+        "fintech-grid",
+        "bowatte",
+        "quartz-unit",
+        "neural-base",
+        "ccc-kandy-digital",
+        "kandy-friend-in-need",
+        "heaven-garden-kandy",
+        "legacy-education-academy",
+        "trilium-language-centre",
+        "bowatte-heritage"
+      ]
     },
-    "showcase": {
-        "intro": {
-            "title1": "Creating Digital Art.",
-            "title2": "We Build Experience."
+    "message": {
+      "text": "Design Department was established to bridge the gap between high-performance engineering and iconic visual storytelling.",
+      "reveal": "...Architecting digital experiences, one pixel at a time."
+    },
+    "video": {
+      "tagline": "BEYOND THE CODE,",
+      "title": "WE <br> PRODUCE <br>THE VISUAL.",
+      "image": "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1777243351713-WhatsApp-Video-2026-04-27-at-04.11.57.mp4"
+    },
+    "capabilities": {
+      "title": "Other SPECIALIZATIONs",
+      "items": [
+        {
+          "title": "4K CINEMATOGRAPHY",
+          "description": "Precision engineered solutions focused on scalability and artistic integrity within the global digital landscape.",
+          "tags": [
+            "SYSTEM_OPTIMAL",
+            "DEPT_CORE"
+          ]
         },
-        "archive": {
-            "tagline": "01 / Selection",
-            "title": "The Selected Archive",
-            "projectIds": [
-                "lumina-vision",
-                "fintech-grid",
-                "bowatte",
-                "quartz-unit",
-                "neural-base",
-                "bowatte-heritage",
-                "ccc-kandy-digital",
-                "kandy-friend-in-need",
-                "heaven-garden-kandy"
-            ]
+        {
+          "title": "DATA ANALYSIS",
+          "description": "Precision engineered solutions focused on scalability and artistic integrity within the global digital landscape.",
+          "tags": [
+            "SYSTEM_OPTIMAL",
+            "DEPT_CORE"
+          ]
         },
-        "message": {
-            "text": "Design Department was established to bridge the gap between high-performance engineering and iconic visual storytelling.",
-            "reveal": "...Architecting digital experiences, one pixel at a time."
+        {
+          "title": "BUSINESS PROFILES",
+          "description": "Precision engineered solutions focused on scalability and artistic integrity within the global digital landscape.",
+          "tags": [
+            "SYSTEM_OPTIMAL",
+            "DEPT_CORE"
+          ]
         },
-        "video": {
-            "tagline": "BEYOND THE CODE,",
-            "title": "WE <br> PRODUCE <br>THE VISUAL.",
-            "image": "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1777243351713-WhatsApp-Video-2026-04-27-at-04.11.57.mp4"
+        {
+          "title": "TECH CONSULTATION",
+          "description": "Precision engineered solutions focused on scalability and artistic integrity within the global digital landscape.",
+          "tags": [
+            "SYSTEM_OPTIMAL",
+            "DEPT_CORE"
+          ]
         },
-        "capabilities": {
-            "title": "Other SPECIALIZATIONs",
-            "items": [
-                "4K CINEMATOGRAPHY",
-                "DATA ANALYSIS",
-                "BUSINESS PROFILES",
-                "TECH CONSULTATION",
-                "AI AUTOMATIONS"
-            ]
+        {
+          "title": "AI AUTOMATIONS",
+          "description": "Precision engineered solutions focused on scalability and artistic integrity within the global digital landscape.",
+          "tags": [
+            "SYSTEM_OPTIMAL",
+            "DEPT_CORE"
+          ]
+        },
+        {
+          "title": "INTERIOR PHOTOGRAPHY",
+          "description": "Precision engineered solutions focused on scalability and artistic integrity within the global digital landscape.",
+          "tags": [
+            "SYSTEM_OPTIMAL",
+            "DEPT_CORE"
+          ]
         }
+      ]
     }
+  },
+  "trustedBrands": {
+    "tagline": "Trusted by Companies worldwide",
+    "brands": [
+      {
+        "name": "Bowatte Ayurvedha",
+        "logoUrl": "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1781992645783-bowatte-logo.svg"
+      },
+      {
+        "name": "Eyesavers ",
+        "logoUrl": "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1781992671117-Brand-(3).png"
+      },
+      {
+        "name": "BeeVibe Cleaning",
+        "logoUrl": "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1781992738115-608927969_122158479062684931_2508967467232532999_n-(1).jpg"
+      },
+      {
+        "name": "The Office Shop ",
+        "logoUrl": "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1781992770622-Nexus-Link-e1768642043829.webp"
+      },
+      {
+        "name": "Heaven Garden Inn",
+        "logoUrl": "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1781992839328-logo-without-bg-straight.webp"
+      },
+      {
+        "name": "Trilium Language Centre",
+        "logoUrl": "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1781992884449-cropped-Copy-of-trillium-language-center-logo-300x179.webp"
+      },
+      {
+        "name": "Legacy Education ",
+        "logoUrl": "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1781992973082-cropped-Legacy-300x100.webp"
+      },
+      {
+        "name": "Kandy Friend-In-Need",
+        "logoUrl": "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1781993004752-Untitled-design-38-e1709039380807.webp"
+      },
+      {
+        "name": "CCC Kandy",
+        "logoUrl": "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1781993072290-cropped-logo-300x296.webp"
+      },
+      {
+        "name": "Hagginwood Montessori pre-school ",
+        "logoUrl": "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1781993193201-Haginwood-1.png"
+      },
+      {
+        "name": "Lanka It Hub",
+        "logoUrl": "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1781993296535-Lanka-It-Hub-2-e1761674513527-(2).webp"
+      },
+      {
+        "name": "Cycle House Kandy ",
+        "logoUrl": "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1781993328505-294735172_550693496758646_8780043273835401658_n.png"
+      },
+      {
+        "name": "Anniwate Rest Kandy ",
+        "logoUrl": "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1781993570574-655866698_18063114782411879_2170324963069335069_n.jpg"
+      },
+      {
+        "name": "Los Amigos Locos",
+        "logoUrl": "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1781993423932-471252152_122097288362702946_8806752653771074367_n.jpg"
+      },
+      {
+        "name": "A.A. Samarasinghe opticians",
+        "logoUrl": "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1781993684455-images-(1).png"
+      }
+    ]
+  },
+  "nexuslinkCaseStudies": [
+    {
+      "slug": "commercial-credit",
+      "clientName": "Commercial Credit & Finance PLC",
+      "headline": "How Commercial Credit leverages our Full-Scale ERP to unify enterprise operations",
+      "location": "Sri Lanka",
+      "industry": "Financial Services / Banking",
+      "product": "Enterprise Resource Planning (ERP) System",
+      "introduction": "Commercial Credit & Finance PLC is a premier financial institution operating a vast network of branches dedicated to consumer finance, asset backing, and term investments. To sustain its rapid market expansion and manage massive transactional data daily, the institution required a robust, centralized digital foundation. Our custom-built Enterprise Resource Planning (ERP) system was deployed to serve as the single source of truth for the entire organization.",
+      "challengeHeadline": "Why did Commercial Credit need an enterprise-wide ERP policy?",
+      "challengeBody": "Prior to implementation, managing high-volume financial operations across decentralized departments created systemic operational bottlenecks. Without a unified ERP framework, teams usually experienced a lack of automated process flow and cross-departmental accountability, leading to:\n\n- An organic sprawl of isolated data silos, creating bloated manual reporting cycles.\n- Inconsistent, fragmented data quality across different branch locations.\n- Delayed operational workflows impacting the ability to scale financial products efficiently.\n\nWhen these back-office challenges become acute enough, system overhauls become non-negotiable. But without a comprehensive ERP system being put in place at the core, the same operational bottlenecks will only happen again. We mitigated this risk by embedding deep process automation directly into their everyday workflows, from front-line customer interactions through to final backend audits.",
+      "solutionHeadline": "Seamless integration leads to stronger operational results",
+      "solutionBody": "With a strong, centralized ERP platform, the benefits are clear for both Commercial Credit as an enterprise and their end consumers. Since its deployment, the system has stabilized core financial workflows, automated resource scheduling, and integrated human capital management streams into a single, cohesive ecosystem.\n\nThe platform has also had a significant impact on compliance auditing. Financial regulatory standards demand absolute accuracy and real-time reporting capabilities. By transitioning from legacy, disconnected systems to our automated ledger and compliance modules, the institution successfully mitigated transaction risks and reduced manual financial balancing errors to near zero.",
+      "testimonials": {
+        "metric": "100%",
+        "description": "Unified data transparency across all regional branches and back-office banking departments."
+      },
+      "implementationHeadline": "How do you achieve seamless organization-wide adoption?",
+      "implementationBody": "Introducing a massive, full-scale ERP system requires careful alignment across multiple organizational tiers. The optimum time to introduce an enterprise platform is during a structured digital transformation initiative focused on enhancing internal operational experience. We recommend starting the ERP blueprinting and data-mapping phase in direct alignment with executive leadership goals right at the project kick-off."
+    },
+    {
+      "slug": "alliance-finance",
+      "clientName": "Alliance Finance Co. PLC",
+      "headline": "How Alliance Finance leverages our FinTech platform to scale microfinance operations",
+      "location": "Sri Lanka",
+      "industry": "Microfinance / FinTech",
+      "product": "Microfinance Management System",
+      "introduction": "Alliance Finance Co. PLC is a pioneering financial institution dedicated to driving financial inclusion through specialized micro-credit facilities. Managing decentralized financial portfolios across rural and semi-urban sectors requires agility, secure mobility, and flawless risk assessment. We engineered a highly scalable Microfinance Management System tailored to handle their unique lending models and field-level operations.",
+      "challengeHeadline": "Why did Alliance Finance need an agile microfinance ecosystem?",
+      "challengeBody": "Navigating field-based credit disbursements without specialized mobile and web synchronization created critical operational blind spots. Without an integrated microfinance platform, field officers and credit risk teams experienced friction in data verification, leading to:\n\n- Paper-heavy credit evaluations, creating delayed approval bottlenecks.\n- Inconsistent tracking of field repayments and collection data.\n- Weak risk visibility impacting the ability to support localized micro-entrepreneurs promptly.\n\nWhen credit cycles lag, both institutional liquidity and borrower trust are compromised. Without a robust FinTech architecture being put in place at the field level, the same recovery risks will only happen again. We solved this by developing an optimized mobile-to-cloud sync pipeline that empowers field agents to assess, log, and process applications securely on-site.",
+      "solutionHeadline": "Algorithmic credit scoring leads to stronger results",
+      "solutionBody": "With an automated engine driving the core microfinance platform, the benefits are clear for both Alliance Finance and their micro-entrepreneur clients. The system securely automates decentralized credit facilities, tracks complex loan life cycles, and calculates real-time interest structures instantly.\n\nThe specialized FinTech architecture has also had a major impact on portfolio risk management. By introducing advanced, automated risk assessment modules and flexible repayment tracking, the platform provides senior management with instant visibility into portfolio health, ensuring a healthy balance between aggressive community growth and stable asset quality.",
+      "testimonials": {
+        "metric": "Real-Time",
+        "description": "Field-to-cloud data synchronization engineered for immediate credit risk evaluation on-site."
+      },
+      "implementationHeadline": "How do you get organization-wide buy-in for field tech?",
+      "implementationBody": "Deploying digital financial tools to decentralized field teams requires software that is highly intuitive and reliable under low-bandwidth conditions. The optimum time to roll out a specialized microfinance system is alongside localized team onboarding workshops. Designing the user interface around field-agent realities ensures high adoption rates and immediate operational accuracy from day one."
+    },
+    {
+      "slug": "sun-match",
+      "clientName": "Sun Match Company",
+      "headline": "How Sun Match Company modernizes workforce operations with a centralized payroll system",
+      "location": "Sri Lanka",
+      "industry": "Manufacturing & Fast-Moving Consumer Goods (FMCG)",
+      "product": "Corporate Payroll Management System",
+      "introduction": "Sun Match Company, a household name in consumer manufacturing, coordinates a multi-tiered workforce across factory floors, warehouses, and corporate offices. Managing complex compensation structures, statutory requirements, and shift patterns manually was a constant administrative burden. We designed and implemented a centralized, automated Payroll Management System built to handle the complexities of a large-scale manufacturing workforce.",
+      "challengeHeadline": "Why did Sun Match Company need an automated payroll architecture?",
+      "challengeBody": "Processing corporate payroll across distinct employee Tiers without an integrated engine led to critical time losses and heightened error rates. Without a robust system, the HR and finance teams faced daily tracking obstacles, leading to:\n\n- An organic sprawl of manual timecards, resulting in delayed processing cycles.\n- Inconsistent calculations regarding shift differentials and statutory benefits.\n- Weak data visibility that slowed down inter-departmental labor cost audits.\n\nWhen monthly payout deadlines approach, processing delays create internal friction. Without an automated payroll engine being put in place at the core, the same operational bottlenecks will only happen again. We eliminated this vulnerability by creating an engine that dynamically maps time-tracking directly to payroll ledgers.",
+      "solutionHeadline": "Precision processing leads to stronger workforce trust",
+      "solutionBody": "With a strong, automated payroll framework running in the background, the benefits are clear for Sun Match Company's entire ecosystem. The platform automatically tracks complex salary structures, processes statutory deductions, and cross-references attendance parameters with perfect consistency.\n\nThe deployment has significantly upgraded compliance operations. Built-in auditing dashboards allow management to generate instantaneous, transparent breakdown reports, ensuring full legal compliance with zero administrative overhead.",
+      "testimonials": {
+        "metric": "Zero Error",
+        "description": "Automated payroll processing engine mapping multi-tier operational shifts directly to ledgers."
+      },
+      "implementationHeadline": "How do you ensure a smooth platform transition in manufacturing?",
+      "implementationBody": "Migrating essential employee data during continuous production cycles requires zero-downtime execution. The optimum time to introduce a corporate payroll management system is directly prior to the start of a fresh financial quarter. Standardizing data structures beforehand allows the corporate environment to pivot smoothly without impacting operational schedules."
+    },
+    {
+      "slug": "studio-malika",
+      "clientName": "Studio Malika",
+      "headline": "How Studio Malika leverages our custom billing engine to streamline creative commerce",
+      "location": "Sri Lanka",
+      "industry": "Creative Studio / Retail & Design",
+      "product": "Specialized Invoicing & Billing System",
+      "introduction": "Studio Malika is a premium creative brand that balances fast-paced design operations with high-end customer interactions. As client demands scaled, handling specialized transactions, custom orders, and immediate billing manually began to strain day-to-day productivity. We engineered a sleek, highly efficient invoicing and billing system to bring enterprise-grade transaction speeds to a creative business ecosystem.",
+      "challengeHeadline": "Why did Studio Malika need an optimized invoicing system?",
+      "challengeBody": "Managing bespoke orders, fluctuating design variables, and immediate client checkouts without a dedicated digital ledger led to administrative friction. Without custom financial modules, the creative and sales teams experienced a lack of real-time visibility, leading to:\n\n- An organic sprawl of manual records, creating bloated administrative workloads.\n- Inconsistent, poorer tracking of outstanding customer balances.\n- Weak checkout experiences impacting the ability to support creative business goals.\n\nWhen these tracking issues become acute enough, backend bottlenecks begin to compromise customer relationships. Without a specialized invoicing architecture being put in place at the counter, the same transaction delays will only happen again. We mitigated this risk by embedding flexible, rapid invoice generation tools directly into their daily point-of-sale workflows.",
+      "solutionHeadline": "Agile billing tools lead to stronger customer relationships",
+      "solutionBody": "With an automated billing platform handling checkout workflows, the benefits are clear for both Studio Malika and their upscale clientele. The system automates immediate invoice generation, tracks transaction statuses, and updates ledger records instantaneously.\n\nThe billing platform has also elevated back-office clarity. The management team can access clean, visual dashboards outlining daily, weekly, and monthly revenue performances, transforming administrative data into clear strategic insights for future brand expansion.",
+      "testimonials": {
+        "metric": "Instant",
+        "description": "Dynamic invoice generation built specifically to eliminate transaction friction at the counter."
+      },
+      "implementationHeadline": "How do you introduce corporate billing into a creative environment?",
+      "implementationBody": "Deploying financial software into an artistically focused business requires a user interface that prioritizes simplicity and visual clarity. The optimum time to introduce a specialized invoicing system is during a planned gallery or product line refresh. Building clean UI elements helps team members adopt the platform immediately without extensive technical training."
+    },
+    {
+      "slug": "trinity-college",
+      "clientName": "Trinity College Kandy",
+      "headline": "How Trinity College Kandy leverages our Accounting System to digitize institutional finance",
+      "location": "Kandy, Sri Lanka",
+      "industry": "Education / Institutional Management",
+      "product": "Institutional Accounting & Financial Management System",
+      "introduction": "Trinity College Kandy is one of Sri Lanka's most historic and prestigious educational institutions, managing a highly complex ecosystem of academic faculties, sports bodies, infrastructural assets, and student services. To maintain impeccable administrative transparency and financial precision, the institution required a specialized platform to centralize and automate its vast multi-departmental accounting workflows.",
+      "challengeHeadline": "Why did Trinity College need a centralized accounting policy?",
+      "challengeBody": "Managing fragmented income streams, vendor accounts, and departmental budgets across a sprawling educational institution via disjointed tools presents unique administrative challenges. Without a centralized institutional accounting system, finance teams experienced a lack of automated tracking, leading to:\n\n- An organic sprawl of manual ledgers, creating bloated reconciliation cycles.\n- Inconsistent tracking of student fees, donor funds, and facility grants.\n- Weak user experience impacting the administrative ability to support institutional goals.\n\nWhen these budgeting and auditing complexities stack up, administrative friction increases. Without an institutional accounting architecture being put in place at the center, the same reconciliation delays will only happen again. We mitigated this by building an intuitive financial framework that links every department directly to the central treasury.",
+      "solutionHeadline": "Automated auditing leads to stronger administrative results",
+      "solutionBody": "With an institutional-grade financial engine in place, the benefits are clear for Trinity College’s management, bursary, and auditing teams. The system digitizes and centralizes complex financial workflows—including automated student fee collections, grant allocations, vendor management, and multi-departmental budgeting.\n\nThe deployment has significantly upgraded the institution's fiscal oversight. Academic heads and administrative teams can now monitor live budgetary allocations, preventing over-expenditure while simplifying long-term capital planning for school development.",
+      "testimonials": {
+        "metric": "Centralized",
+        "description": "Consolidated multi-departmental financial ledger enabling immediate institutional auditing."
+      },
+      "implementationHeadline": "How do you get organization-wide buy-in across faculties?",
+      "implementationBody": "Introducing an institutional financial platform requires catering to users with varying levels of technical expertise. The optimum time to introduce a specialized accounting system is during a scheduled fiscal year transition, minimizing disruption to ongoing operations. Ensuring that user roles are simple and tightly defined allows administrative staff to adopt the system quickly and accurately."
+    },
+    {
+      "slug": "arnolda-co",
+      "clientName": "Arnolda Co (Pvt) Ltd",
+      "headline": "How Arnolda Co leverages our custom payroll architecture to optimize workforce management",
+      "location": "Sri Lanka",
+      "industry": "Corporate Operations / Commerce",
+      "product": "Dedicated Payroll System",
+      "introduction": "Arnolda Co (Pvt) Ltd manages a dynamic operational team with diverse shifting patterns, specialized compensation tiers, and strict monthly timelines. To reduce operational friction and human error within their accounting department, they needed a digital payroll solution engineered to handle their exact internal policies. We delivered a dedicated payroll framework tailored to unify their workforce management.",
+      "challengeHeadline": "Why did Arnolda Co need a tailored payroll system?",
+      "challengeBody": "Relying on manual calculation steps for multi-tier employees created repetitive administrative bottlenecks. Without a secure, integrated engine, payroll operations frequently struggled with compliance checks and visibility issues, leading to:\n\n- An organic sprawl of disconnected spreadsheets, complicating employee data retention.\n- Inconsistent tracking of fluctuating variables like overtime, bonuses, and localized deductions.\n- Delayed administrative updates that strained inter-departmental transparency.\n\nWhen internal processing methods become overly complicated, workforce trust can be impacted. Without a robust, dedicated payroll system being put in place, the same operational friction will only happen again. We answered this challenge by engineering a simplified, automated dashboard built explicitly for their company structure.",
+      "solutionHeadline": "Standardized workflows lead to seamless end-of-month processing",
+      "solutionBody": "With our dedicated payroll system managing employee calculations, the administrative workflow has completely stabilized. The platform accurately updates shifting variables, manages regulatory parameters automatically, and generates flawless digital disbursements on schedule.\n\nThe system has brought absolute clarity to corporate auditing. Management can instantly review historical compensation analytics, helping the company evaluate labor expenses accurately and run internal reviews with total data integrity.",
+      "testimonials": {
+        "metric": "Tailored",
+        "description": "Customized calculation matrices engineered explicitly to match multi-tier internal corporate structures."
+      },
+      "implementationHeadline": "How do you deploy specialized HR tech with minimal friction?",
+      "implementationBody": "Updating internal financial pipelines requires a strategy that guarantees data security and zero loss of record history. The optimum time to launch a custom payroll architecture is during a standard monthly evaluation cycle, using parallel testing alongside legacy records. This methodical approach ensures that the administrative team gains full operational fluency before going fully live."
+    },
+    {
+      "slug": "palayakats",
+      "clientName": "Palayakats",
+      "headline": "How Palayakats drives high-volume commercial scaling through our custom invoicing platform",
+      "location": "Sri Lanka",
+      "industry": "Trading / Wholesale Distribution & Commercial Sales",
+      "product": "Commercial Invoicing & Order Management System",
+      "introduction": "Palayakats operates in a highly transactional, competitive distribution market where inventory rotation speeds and quick billing are critical. Managing rapid order processing, diverse wholesale accounts, and instant payments required an agile billing foundation. We engineered a highly resilient commercial invoicing system built to accelerate transaction velocities at every level of their pipeline.",
+      "challengeHeadline": "Why did Palayakats require an advanced invoicing system?",
+      "challengeBody": "Tracking high-frequency wholesale order flows without an optimized, real-time digital billing matrix created recurring operational logjams. Without an automated commercial layout, sales teams encountered manual limitations, leading to:\n\n- An organic sprawl of handwritten invoices, stalling rapid logistics and shipping.\n- Inconsistent, poorer visibility into outstanding credit accounts and regional buyer statuses.\n- Slow point-of-sale execution affecting the capacity to support aggressive market expansion.\n\nWhen wholesale transaction processing lags, the entire supply chain slows down. Without a dedicated invoicing system being put in place at the transaction hub, the same operational bottlenecks will only happen again. We solved this vulnerability by introducing an agile, rapid-entry billing system optimized for continuous trade.",
+      "solutionHeadline": "Automated commercial pipelines lead to stronger market scale",
+      "solutionBody": "With our invoicing system managing order-to-cash workflows, Palayakats has significantly improved its fulfillment speeds. The platform effortlessly generates multi-item invoices, tracks credit terms live, and keeps detailed financial statements accessible instantaneously.\n\nThe data collected through the platform has also optimized ledger tracking. The leadership team can pull automated sales analytics on demand, keeping wholesale inventories perfectly aligned with live regional demand trends.",
+      "testimonials": {
+        "metric": "High-Velocity",
+        "description": "Wholesale transaction matrix optimized to process complex, multi-item regional distribution distributions."
+      },
+      "implementationHeadline": "How do you integrate dynamic invoicing software into high-speed sales hubs?",
+      "implementationBody": "Deploying technical tools into active wholesale environments requires software that cuts out unnecessary steps. The optimum time to deploy an upgraded commercial invoicing framework is during a scheduled seasonal inventory migration. Setting up rapid hotkeys and automated tax profiles allows order desks to adapt to the new digital ledger instantly."
+    },
+    {
+      "slug": "aa-samarasinghe",
+      "clientName": "A.A Samarasinghe",
+      "headline": "How A.A Samarasinghe leverages our billing system to optimize commercial sales pipelines",
+      "location": "Sri Lanka",
+      "industry": "Trading & Commercial Distribution",
+      "product": "Commercial Billing System",
+      "introduction": "A.A Samarasinghe operates a busy commercial footprint that demands high transactional accuracy and prompt order processing. To keep pace with market growth and eliminate the errors inherent in manual paper tracking, the business needed an agile financial solution. We developed a custom Commercial Billing System designed to accelerate their order-to-cash cycles and stabilize transaction tracking.",
+      "challengeHeadline": "Why did A.A Samarasinghe need an integrated billing engine?",
+      "challengeBody": "Handling diverse customer profiles, bulk discounts, and rapid point-of-sale requirements without a centralized platform created routine checkout friction. Without an automated billing architecture, the operational teams faced clear processing constraints, leading to:\n\n- An organic sprawl of manual receipts, slowing down daily sales reconciliations.\n- Inconsistent, poorer tracking of customer payment cycles and outstanding balances.\n- Friction in ledger updating that impacted the ability to scale sales operations smoothly.\n\nWhen transactional logging becomes a bottleneck, customer satisfaction and cash flow are both at risk. Without a robust billing architecture being put in place at the point of sale, the same operational bottlenecks will only happen again. We resolved this issue by deploying a unified billing engine that processes transactions instantaneously.",
+      "solutionHeadline": "Fast transactional execution leads to stronger revenue health",
+      "solutionBody": "By shifting to our specialized billing system, A.A Samarasinghe has transformed its daily sales operations. The software automates invoice calculations, tracks real-time payment statuses, and updates financial summaries immediately upon checkout.\n\nBeyond front-end improvements, the platform provides deep administrative clarity. Management can now monitor live sales metrics, allowing for data-driven choices regarding inventory distribution and credit control.",
+      "testimonials": {
+        "metric": "Automated",
+        "description": "Order-to-cash workflow tracking providing structural transaction clarity for sales desks."
+      },
+      "implementationHeadline": "How do you deploy intuitive billing tools with zero downtime?",
+      "implementationBody": "Introducing new point-of-sale workflows into an active business environment requires a simple, clean, and highly reliable user interface. The optimum time to introduce a specialized billing system is during a low-volume business window or prior to a stock refresh. Training team members on a clean dashboard ensures maximum adoption speed and immediate data accuracy from day one."
+    },
+    {
+      "slug": "eyesavers",
+      "clientName": "EYEsavers Pvt LTD",
+      "headline": "How EYEsavers digitalizes patient tracking with our specialized Eye Prescription System",
+      "location": "Sri Lanka",
+      "industry": "Healthcare / Optometry & Optical Retail",
+      "product": "Eye Prescription System",
+      "introduction": "EYEsavers Pvt LTD is a modern optometric and optical retail provider dedicated to delivering precise vision care and custom eyewear solutions. To maintain an excellent standard of clinical care, the company required a specialized platform capable of linking intricate diagnostic data with retail fulfillment. We developed an Eye Prescription System that integrates medical metrics and optical sales into a smooth, secure workflow.",
+      "challengeHeadline": "Why did EYEsavers need a dedicated clinical prescription system?",
+      "challengeBody": "Managing precise clinical measurements—such as spherical errors, cylinder values, axes, and pupillary distances—on disjointed paper cards created clear risks of diagnostic misplacement and retail fulfillment error. Without an integrated prescription engine, optometrists and sales teams faced ongoing communication friction, leading to:\n\n- An organic sprawl of physical records, creating slower historical patient reviews.\n- Inconsistent tracking between clinical test findings and final lab orders.\n- Weak optical workflows affecting the ability to support long-term patient retention goals.\n\nIn vision care, even minor communication errors between the clinic and the optical laboratory compromise final product quality. Without a specialized prescription architecture being put in place at the center, the same clinical bottlenecks will only happen again. We countered this by building a dedicated database that securely locks and transmits prescription vectors instantly.",
+      "solutionHeadline": "Digital clinical integration leads to stronger optical care",
+      "solutionBody": "With our specialized Eye Prescription System handling data pathways, EYEsavers has significantly streamlined its patient pipeline. Optometrists can instantly log refractive values, check multi-year patient histories, and send error-free prescription specifications directly to lens production teams.\n\nThe system has also greatly enhanced retail management. Sales teams can check patient histories instantly to offer personalized frame and lens recommendations, turning historical clinical data into an asset for customer loyalty.",
+      "testimonials": {
+        "metric": "Integrated",
+        "description": "Secure vector transmission connecting precise optometric testing metrics directly to lens production labs."
+      },
+      "implementationHeadline": "How do you onboard clinical and retail staff onto a unified system?",
+      "implementationBody": "Bringing medical data and retail workflows under a single software umbrella requires a user layout tailored to distinct clinical and sales roles. The optimum time to roll out an integrated optometric system is alongside a clinic modernization update. Ensuring the system maps cleanly to daily patient check-in paths guarantees an immediate boost to operational efficiency."
+    },
+    {
+      "slug": "amith-gems",
+      "clientName": "Amith Gems",
+      "headline": "How Amith Gems safeguards authenticity with our custom Gem Certification System",
+      "location": "Sri Lanka",
+      "industry": "Luxury Retail / Gemstone & Jewelry Export",
+      "product": "Gem Certification System",
+      "introduction": "Amith Gems is an exclusive exporter and retailer of high-value gemstones and luxury jewelry, operating in a market where trust, provenance, and precise documentation are everything. To guarantee the unassailable authenticity of every item passing through their hands, the company needed a secure digital platform to manage gemstone grading and certificate generation. We developed a custom Gem Certification System built to anchor their premium brand integrity.",
+      "challengeHeadline": "Why did Amith Gems require a specialized certification engine?",
+      "challengeBody": "Managing unique gemstone attributes—including carat weight, color grade, clarity, origin, and microscopic characteristics—on manual logs left room for operational delays and documentation vulnerabilities. Without a secure verification database, laboratory and sales teams experienced a lack of centralized coordination, leading to:\n\n- An organic sprawl of physical records, which delayed export documentation prep.\n- Inconsistent formatting and data tracking for high-value gemstone certificates.\n- A fragmented verification process that impacted the ability to support international trading scales.\n\nIn the luxury gemstone trade, a delayed or compromised certificate means a lost international sale. Without an immutable certification system being put in place at the evaluation stage, the same tracking risks will only happen again. We solved this by creating a secure digital vault that pairs specific gemstone profiles with tamper-evident, printable certificates.",
+      "solutionHeadline": "Traceable authentication leads to stronger international trust",
+      "solutionBody": "The implementation of the Gem Certification System has brought ironclad security and speed to Amith Gems' high-value inventory. Technicians can rapidly enter gemological metrics, link high-resolution gemstone photographs, and instantly output professional, brand-authenticated certifications.\n\nThe platform has also significantly upgraded inventory audits. Management can track the status of certified items from extraction and cutting through to final global dispatch, maintaining complete visibility over high-value capital assets.",
+      "testimonials": {
+        "metric": "Tamper-Evident",
+        "description": "Secure gemological database anchoring item authenticity and tracking export documentation histories."
+      },
+      "implementationHeadline": "How do you embed digital security protocols into luxury trade?",
+      "implementationBody": "Deploying a luxury certification platform demands software that outputs flawless, security-focused print formats while keeping data input simple for gemologists. The optimum time to launch a custom certification system is prior to an international trade show or export campaign. Setting up secure, standardized templates enables the business to scale its export output with absolute confidence."
+    },
+    {
+      "slug": "ccc-kandy",
+      "clientName": "CCC Kandy",
+      "headline": "How CCC Kandy modernizes clinical workflows through our Patient Management System",
+      "location": "Kandy, Sri Lanka",
+      "industry": "Healthcare / Clinical Medicine",
+      "product": "Patient Management System",
+      "introduction": "CCC Kandy is a specialized clinical facility dedicated to delivering critical, long-term healthcare services and structured treatment regimes. Treating complex patient flows, treatment histories, appointment channels, and doctor allocations requires a reliable, secure digital platform. We designed and deployed a comprehensive Patient Management System built to optimize clinical scheduling and protect patient histories.",
+      "challengeHeadline": "Why did CCC Kandy require a centralized patient management architecture?",
+      "challengeBody": "Coordinating specialized patient treatments and critical consultations using manual files or disjointed software created routine administrative bottlenecks. Without a secure, unified patient system, medical and front-office teams experienced coordination friction, leading to:\n\n- An organic sprawl of paper charts, causing slower access to historical records.\n- Inconsistent tracking of patient scheduling, leading to extended clinic wait times.\n- Weak data integration that slowed down inter-departmental care handovers.\n\nIn a critical medical environment, scheduling confusion or delayed charts compromise administrative quality and patient comfort. Without an integrated patient management system being put in place at the center, the same clinical bottlenecks will only happen again. We mitigated this by engineering a secure, responsive database that unifies clinical and administrative teams.",
+      "solutionHeadline": "Streamlined care pathways lead to stronger clinical outcomes",
+      "solutionBody": "With the Patient Management System managing day-to-day clinic operations, CCC Kandy has achieved outstanding administrative flow. The platform automates appointment scheduling, tracks historical treatment timelines securely, and updates clinical care queues in real time.\n\nThe system prioritizes clinical data protection and compliance. Security-restricted login profiles ensure patient confidentiality is maintained according to healthcare standards, while giving authorized clinicians immediate access to vital records.",
+      "testimonials": {
+        "metric": "Structured",
+        "description": "Role-based clinical scheduling architecture built to securely streamline treatment historical timelines."
+      },
+      "implementationHeadline": "How do you deploy critical medical software with zero clinical disruption?",
+      "implementationBody": "Introducing software into an active medical environment requires an execution plan that safeguards active care schedules. The optimum time to introduce an enterprise-grade patient management system is during a planned clinical phase roll-out, running digital scheduling alongside existing logs for a brief transition period. Ensuring clean, role-based interfaces allows nursing and front-desk teams to master the platform quickly and maintain a high standard of patient care."
+    }
+  ]
 }

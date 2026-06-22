@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useRef } from "react";
+import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowUpRight, ArrowRight, Cpu } from "lucide-react";
@@ -98,65 +99,16 @@ export default function Hero({ data }: { data: any }) {
                 gsap.set('.seq-3-el', { scale: 0.8, opacity: 0 });
                 gsap.set('.seq-3-word', { y: '100%' });
 
-                const tl = gsap.timeline({
-                    scrollTrigger: {
-                        trigger: containerRef.current,
-                        start: "top top",
-                        end: "bottom bottom",
-                        scrub: 0.5, // Even snappier scrub
-                    }
-                });
+                const tl = gsap.timeline();
 
-                // Sequence 1: "Design." Intro (VISIBLE BY DEFAULT)
-                gsap.set('#seq-intro', { display: 'flex', autoAlpha: 1 });
+                // APEX Brand UI (The Destination) - PLAY IMMEDIATELY
+                gsap.set('#seq-apex', { display: 'flex', autoAlpha: 1 });
 
-                tl.to('.scroll-hint', { opacity: 0, y: -20, duration: 0.4, ease: 'power2.in' })
-                    .fromTo('#seq-intro h1',
-                        { filter: 'blur(0px)', scale: 1, opacity: 1 },
-                        { filter: 'blur(0px)', scale: 1, opacity: 1, duration: 1.5 } // Reduced from 2
-                    )
-                    .to('#seq-intro h1', { filter: 'blur(30px)', scale: 0.7, opacity: 0, duration: 0.8, ease: 'power2.in' })
-                    .set('#seq-intro', { display: 'none' });
-
-                // Sequence 2: Cinematic Word Flash ("A New Digital Era")
-                tl.set('#seq-2', { display: 'flex', autoAlpha: 1 })
-                    .to(canvasParams.current, { speed: 0.005, duration: 0.8, ease: 'power2.in' }, "<");
-                const words = document.querySelectorAll('.word-flash');
-                words.forEach((word) => {
-                    tl.fromTo(word,
-                        { opacity: 0, scale: 1.3, filter: 'blur(10px)' },
-                        { opacity: 1, scale: 1, filter: 'blur(0px)', duration: 0.6, ease: 'power1.out' }
-                    )
-                        .to({}, { duration: 0.3 }) // Shorter hold
-                        .to(word, { opacity: 0, scale: 0.85, filter: 'blur(8px)', duration: 0.5, ease: 'power1.in' });
-                });
-                tl.set('#seq-2', { display: 'none' });
-
-                // Sequence 3: Tech Grid Complexity ("WE CREATE IMPACT")
-                tl.set('#seq-3', { display: 'flex', autoAlpha: 1 })
-                    .to(canvasParams.current, { speed: 0.025, connectRadius: 35000, lineAlphaMulti: 0.3, duration: 1.5, ease: 'power3.inOut' }, "<")
-                    .fromTo('#seq-3-box-wrapper',
-                        { scale: 0.85, opacity: 0, rotationX: 15, transformPerspective: 1000 },
-                        { scale: 1, opacity: 1, rotationX: 0, duration: 1.5, ease: 'expo.out' }
-                    )
-                    .to('.seq-3-el', { scale: 1, opacity: 1, duration: 0.8, stagger: 0.08, ease: 'power2.out' }, "-=1.0")
-                    .to('.seq-3-word', { y: '0%', duration: 1.0, stagger: 0.08, ease: 'power4.out' }, "-=0.8")
-                    .to('.seq-3-text', { y: 0, opacity: 1, duration: 1.0, ease: 'power4.out' }, "-=0.6")
-                    .to({}, { duration: 2 }) // Shorter hold
-                    .to('#seq-3-box-wrapper', { scale: 5, opacity: 0, filter: 'blur(30px)', duration: 1.5, ease: 'power4.in' })
-                    .set('#seq-3', { display: 'none' });
-
-                // Sequence 4: APEX Brand UI (The Destination)
-                tl.set('#seq-apex', { display: 'flex', autoAlpha: 1 })
-                    .to(canvasParams.current, { speed: 0.0003, connectRadius: 10000, lineAlphaMulti: 0.1, duration: 1.5, ease: 'power4.out' }, "<")
-                    .fromTo(".gsap-word", { y: "110%" }, { y: "0%", duration: 1.0, stagger: 0.12, ease: "power4.out" })
+                tl.to(canvasParams.current, { speed: 0.0003, connectRadius: 10000, lineAlphaMulti: 0.1, duration: 1.5, ease: 'power4.out' })
+                    .fromTo(".gsap-word", { y: "110%" }, { y: "0%", duration: 1.0, stagger: 0.12, ease: "power4.out" }, "-=0.5")
                     .fromTo(".fade-enter", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.8, stagger: 0.08, ease: "power2.out" }, "-=0.6")
-                    .fromTo(".floating-asset", { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 1.2, stagger: 0.15, ease: "power3.out" }, "-=1.0")
-                    .to({}, { duration: 3 }); // Final UI Hold
+                    .fromTo(".floating-asset", { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 1.2, stagger: 0.15, ease: "power3.out" }, "-=1.0");
 
-            } else {
-                gsap.set(['#seq-intro', '#seq-2', '#seq-3'], { display: 'none' });
-                gsap.set('#seq-apex', { opacity: 1, display: 'flex' });
             }
 
             gsap.to(".bg-3d-shape", {
@@ -178,9 +130,8 @@ export default function Hero({ data }: { data: any }) {
     }, []);
 
     return (
-        <div ref={containerRef} id="scroll-wrapper" className="relative w-full h-[600vh] bg-paper text-void overflow-visible">
-
-            <div id="pin-container" className="sticky top-0 w-screen h-screen overflow-hidden bg-paper">
+        <div ref={containerRef} className="relative w-full h-screen bg-paper text-void overflow-hidden">
+            <div id="main-hero" className="w-full h-full relative">
 
                 <canvas ref={canvasRef} id="bg-canvas" className="absolute inset-0 w-full h-full pointer-events-none z-0 opacity-40"></canvas>
                 <div className="absolute inset-0 bg-grid-pattern opacity-30 z-0 pointer-events-none"></div>
@@ -196,46 +147,6 @@ export default function Hero({ data }: { data: any }) {
                     </div>
                 </div>
 
-                {/* SEQUENCE 1: "Design." Intro */}
-                <div id="seq-intro" className="seq absolute inset-0 flex items-center justify-center flex-col z-10 w-full">
-                    <h1 className="font-display text-7xl md:text-9xl font-bold tracking-tighter uppercase text-void origin-center text-center leading-none">
-                        <span className="block">Design</span>
-                        <span className="block">Department.</span>
-                    </h1>
-
-                    {/* Scroll Down UX Hint */}
-                    <div className="scroll-hint absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-60">
-                        <span className="text-[10px] uppercase tracking-[0.3em] text-void font-label font-bold animate-pulse">Scroll Down</span>
-                        <div className="w-[1px] h-12 bg-gradient-to-b from-void to-transparent"></div>
-                    </div>
-                </div>
-
-                {/* SEQUENCE 2: Cinematic Build */}
-                <div id="seq-2" className="seq absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
-                    <h2 className="word-flash absolute text-7xl md:text-9xl font-bold tracking-tighter uppercase text-void opacity-0 font-display">One</h2>
-                    <h2 className="word-flash absolute text-7xl md:text-9xl font-bold tracking-tighter uppercase text-void opacity-0 font-display">Pixel</h2>
-                    <h2 className="word-flash absolute text-7xl md:text-9xl font-bold tracking-tighter uppercase text-void opacity-0 font-display">At</h2>
-                    <h2 className="word-flash absolute text-7xl md:text-9xl font-bold tracking-tighter uppercase text-electric opacity-0 font-display">A Time.</h2>
-                </div>
-
-                {/* SEQUENCE 3: Tech Grid complexity */}
-                <div id="seq-3" className="seq absolute inset-0 flex items-center justify-center z-10 overflow-hidden pointer-events-none">
-                    <div id="seq-3-box-wrapper" className="relative w-[90%] max-w-5xl aspect-[4/3] md:aspect-[21/9] rounded-sm p-[1px] bg-gradient-to-br from-black/10 via-electric/20 to-black/5 shadow-[0_20px_50px_rgba(0,0,0,0.1)]">
-                        <div className="relative w-full h-full bg-white/80 backdrop-blur-3xl flex flex-col items-center justify-center p-8 md:p-12 text-center">
-                            <span className="seq-3-el text-[10px] text-gray-400 tracking-widest uppercase font-label font-bold mb-8 block">Design Department</span>
-                            <div className="relative z-10">
-                                <h2 className="font-display text-5xl md:text-7xl font-bold tracking-tight text-void leading-[0.95] uppercase">
-                                    <span className="inline-flex overflow-hidden pb-1 mr-4"><span className="seq-3-word block">WE</span></span>
-                                    <span className="inline-flex overflow-hidden pb-1"><span className="seq-3-word block">CREATE</span></span><br />
-                                    <span className="inline-flex overflow-hidden pb-1"><span className="seq-3-word block text-electric">IMPACT.</span></span>
-                                </h2>
-                                <p className="seq-3-text mt-6 text-xs md:text-sm text-gray-500 max-w-sm leading-relaxed font-sans font-medium mx-auto">
-                                    RECALIBRATED. ELEVATED. ONLINE. WE ENGINEER THE EXPERIENCE.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
                 {/* SEQUENCE 4: APEX FULL PAGE UI */}
                 <div id="seq-apex" className="seq absolute inset-0 w-full h-full flex flex-col z-20">
@@ -271,10 +182,10 @@ export default function Hero({ data }: { data: any }) {
                                 </p>
                                 <div className="fade-enter flex flex-wrap items-center gap-4">
                                     <div className="p-px rounded-md bg-electric shadow-[0_15px_40px_rgba(212,175,55,0.3)]">
-                                        <a href="/works" className="group inline-flex items-center gap-2 px-10 py-4 bg-electric text-void rounded-md text-[13px] font-black uppercase tracking-[0.1em] transition-all hover:bg-[#f0d060] font-label">
+                                        <Link href="/#sc-work" className="group inline-flex items-center gap-2 px-10 py-4 bg-electric text-void rounded-md text-[13px] font-black uppercase tracking-[0.1em] transition-all hover:bg-[#f0d060] font-label">
                                             {data.primaryBtn}
                                             <ArrowRight className="w-5 h-5 text-void group-hover:translate-x-1.5 transition-transform" strokeWidth={3} />
-                                        </a>
+                                        </Link>
                                     </div>
                                     <button className="inline-flex items-center justify-center px-10 py-4 bg-transparent border-2 border-void/10 text-void hover:bg-void hover:text-white rounded-md text-[13px] font-black uppercase tracking-[0.1em] transition-all font-label">
                                         {data.secondaryBtn}
@@ -289,11 +200,10 @@ export default function Hero({ data }: { data: any }) {
                             <span>Studio Status: <span className="text-electric">{data.status}</span></span>
                         </div>
                         <div className="fade-enter flex items-center gap-4">
-                            <span>Capacity: {data.capacity}</span>
+
                         </div>
                     </footer>
                 </div>
-
             </div>
         </div>
     );

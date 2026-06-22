@@ -1,10 +1,11 @@
 import React from 'react';
+import Link from 'next/link';
 import { ArrowUpRight, ArrowRight, CornerRightUp } from "lucide-react";
 
 export default function Services({ data }: { data: any }) {
     if (!data) return null;
     return (
-        <section id="services" className="bg-paper text-void py-12 relative border-b border-border-light bg-grid-pattern">
+        <section id="services" className="bg-paper text-void pt-12 pb-0 relative border-b border-border-light bg-grid-pattern">
             {/* Container Lines */}
             <div className="absolute inset-0 pointer-events-none flex justify-center overflow-hidden z-0 hidden md:flex">
                 <div className="w-full max-w-screen-2xl px-4 md:px-8 relative h-full">
@@ -32,12 +33,12 @@ export default function Services({ data }: { data: any }) {
                     </div>
                     <div className="mt-6 md:mt-0 max-w-sm">
                         <p className="text-sm font-medium mb-6 font-sans text-gray-500">{data.description}</p>
-                        <a href="#" className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest hover:text-electric transition-colors font-label px-6 py-2 border-2 border-void/10 rounded-md">
-                            All Services
+                        <Link href="/#sc-ideas" className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest hover:text-electric transition-colors font-label px-6 py-2 border-2 border-void/10 rounded-md">
+                            Other Services
                             <div className="w-5 h-5 rounded-full bg-electric flex items-center justify-center text-void">
                                 <ArrowUpRight strokeWidth={2.5} className="w-3 h-3" />
                             </div>
-                        </a>
+                        </Link>
                     </div>
                 </div>
 

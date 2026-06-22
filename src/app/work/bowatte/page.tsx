@@ -11,12 +11,12 @@ export default function BowatteProject() {
         role: "Lead Developer & Creative Director (Design Dept.)",
         timeline: "Launched 2025",
         mainImage: "https://images.unsplash.com/photo-1540555700478-4be289fbecee?q=80&w=2670&auto=format&fit=crop", // Sri Lankan inspired / Wellness vibe
-        meta: {
-            build: "Build v4.2.0",
-            systems: "Core: E-commerce Engine",
-            theme: "Heritage Light / Minimalist",
-            engineering: "Specialized WP Architecture"
-        },
+        meta: [
+            { label: "Build", value: "v4.2.0" },
+            { label: "Systems", value: "E-commerce Engine" },
+            { label: "Theme", value: "Heritage Light" },
+            { label: "Engineering", value: "Specialized WP" }
+        ],
         capabilities: [
             {
                 number: "01",

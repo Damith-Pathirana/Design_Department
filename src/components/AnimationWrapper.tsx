@@ -34,5 +34,5 @@ export default function AnimationWrapper({ children }: { children: React.ReactNo
         }
     }, []);
 
-    return <div ref={comp} className="contents">{children}</div>;
+    return <div ref={comp} className="contents" suppressHydrationWarning>{children}</div>;
 }

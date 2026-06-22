@@ -46,31 +46,33 @@ export default function HeroShader() {
                     float curve = sin(vUv.y * 3.0 + u_time * 0.8) * 0.15;
                     float xPos = vUv.x + curve;
 
-                    // Define the specific gold palette (Dark to Light)
-                    vec3 gold1 = vec3(1.00, 0.92, 0.50); // Highlight Gold
-                    vec3 gold2 = vec3(0.99, 0.83, 0.02); // Primary Gold (#FCD305)
-                    vec3 gold3 =  vec3(0.83, 0.68, 0.21); // Classic Gold
-                    vec3 gold4 =  vec3(0.58, 0.45, 0.12); // Deep Shadow Gold
-                    vec3 bg    = vec3(1.,1.,1.); // Black Background
+                    // Define the specific gold palette
+                    vec3 gold1 = vec3(1.00, 0.92, 0.50); 
+                    vec3 gold2 = vec3(0.99, 0.83, 0.02); 
+                    vec3 gold3 = vec3(0.83, 0.68, 0.21); 
+                    vec3 gold4 = vec3(0.58, 0.45, 0.12); 
 
-                    // Stripe Width logic (Hard Stops)
-                    // We check the modified X position to draw clean, vertical-ish stripes
-                    vec3 color = bg;
+                    vec3 color = vec3(0.0);
+                    float alpha = 0.0;
                     
-                    float edge = 0.5; // Center point
-                    float width = 0.08; // Stripe thickness
+                    float edge = 0.5; 
+                    float width = 0.08; 
 
                     if (xPos > edge && xPos < edge + width) {
                         color = gold1;
+                        alpha = 1.0;
                     } else if (xPos > edge + width && xPos < edge + width * 2.0) {
                         color = gold2;
+                        alpha = 1.0;
                     } else if (xPos > edge + width * 2.0 && xPos < edge + width * 3.0) {
                         color = gold3;
+                        alpha = 1.0;
                     } else if (xPos > edge + width * 3.0 && xPos < edge + width * 4.0) {
                         color = gold4;
+                        alpha = 1.0;
                     }
 
-                    gl_FragColor = vec4(color, 1.0);
+                    gl_FragColor = vec4(color, alpha);
                 }
             `;
 
@@ -80,6 +82,7 @@ export default function HeroShader() {
                 uniforms: {
                     u_time: { value: 0.0 },
                 },
+                transparent: true
             });
 
             scene.add(new THREE.Mesh(geometry, material));
@@ -116,7 +119,7 @@ export default function HeroShader() {
     }, []);
 
     return (
-        <div className="absolute inset-0 w-full h-full overflow-hidden bg-black">
+        <div className="absolute inset-0 w-full h-full overflow-hidden bg-transparent">
             <canvas
                 ref={canvasRef}
                 className="w-full h-full block"

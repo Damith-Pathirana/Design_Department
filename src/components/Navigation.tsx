@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 import { ArrowUpRight, Menu, X, ArrowLeft } from "lucide-react";
 
 interface NavigationProps {
@@ -16,24 +17,25 @@ export default function Navigation({ status = "Optimal", isProjectPage = false, 
             <header className={`w-full relative z-40 px-8 md:px-16 py-8 flex items-center justify-between ${isProjectPage ? 'border-b border-zinc-100' : ''}`}>
                 <div className="fade-enter flex items-center gap-2">
                     {showBack ? (
-                        <a href="/" className="flex items-center gap-3 text-zinc-400 hover:text-void transition-colors group">
+                        <Link href="/" className="flex items-center gap-3 text-zinc-400 hover:text-void transition-colors group">
                             <div className="w-10 h-10 rounded-full border border-zinc-200 flex items-center justify-center group-hover:bg-zinc-50 transition-all">
                                 <ArrowLeft className="w-4 h-4" />
                             </div>
-                            <span className="text-xl tracking-tighter font-black uppercase font-display italic">Design<span className="text-electric not-italic">*</span></span>
-                        </a>
+                            <span className="text-xl tracking-tighter font-black uppercase font-display italic">Design Dept<span className="text-electric not-italic">*</span></span>
+                        </Link>
                     ) : (
-                        <a href="/" className="text-2xl tracking-tighter font-black text-void uppercase font-display italic hover:opacity-80 transition-opacity">
-                            Design<span className="text-electric not-italic">*</span>
-                        </a>
+                        <Link href="/" className="text-2xl tracking-tighter font-black text-void uppercase font-display italic hover:opacity-80 transition-opacity">
+                            Design Dept<span className="text-electric not-italic">*</span>
+                        </Link>
                     )}
                 </div>
 
                 <nav className="fade-enter hidden lg:flex items-center gap-1 bg-white/50 backdrop-blur-md rounded-lg p-1 border border-black/5 shadow-sm">
-                    <a href="/#services" className="px-5 py-2 rounded-md text-xs font-bold text-gray-500 hover:text-void hover:bg-black/5 transition-colors uppercase tracking-widest font-label">Services</a>
-                    <a href="/works" className="px-5 py-2 rounded-md text-xs font-bold text-gray-500 hover:text-void hover:bg-black/5 transition-colors uppercase tracking-widest font-label">Works</a>
-                    <a href="/#about" className="px-5 py-2 rounded-md text-xs font-bold text-gray-500 hover:text-void hover:bg-black/5 transition-colors uppercase tracking-widest font-label">About Us</a>
-                    <a href="/#contact" className="px-5 py-2 rounded-md text-xs font-bold text-gray-500 hover:text-void hover:bg-black/5 transition-colors uppercase tracking-widest font-label">Contact</a>
+                    <Link href="/#services" className="px-5 py-2 rounded-md text-xs font-bold text-gray-500 hover:text-void hover:bg-black/5 transition-colors uppercase tracking-widest font-label">Services</Link>
+                    <Link href="/work" className="px-5 py-2 rounded-md text-xs font-bold text-gray-500 hover:text-void hover:bg-black/5 transition-colors uppercase tracking-widest font-label">Works</Link>
+                    <Link href="/#about" className="px-5 py-2 rounded-md text-xs font-bold text-gray-500 hover:text-void hover:bg-black/5 transition-colors uppercase tracking-widest font-label">About Us</Link>
+                    <Link href="/nexuslink" className="px-5 py-2 rounded-md text-xs font-bold text-electric hover:text-void hover:bg-black/5 transition-colors uppercase tracking-widest font-label">Software</Link>
+                    <Link href="/#contact" className="px-5 py-2 rounded-md text-xs font-bold text-gray-500 hover:text-void hover:bg-black/5 transition-colors uppercase tracking-widest font-label">Contact</Link>
                 </nav>
 
                 <div className="fade-enter flex items-center gap-4">
@@ -46,10 +48,10 @@ export default function Navigation({ status = "Optimal", isProjectPage = false, 
                     </button>
 
                     <div className="hidden md:block p-px rounded-md bg-electric">
-                        <a href="/#contact" className="group relative inline-flex items-center gap-2 px-6 py-2.5 bg-electric text-void rounded-md text-xs font-black uppercase tracking-widest transition-all hover:bg-[#f0d060] font-label">
+                        <Link href="/#contact" className="group relative inline-flex items-center gap-2 px-6 py-2.5 bg-electric text-void rounded-md text-xs font-black uppercase tracking-widest transition-all hover:bg-[#f0d060] font-label">
                             <span>Start Project</span>
                             <ArrowUpRight className="w-4 h-4 text-void group-hover:scale-110 transition-transform" strokeWidth={3} />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </header>
@@ -70,18 +72,19 @@ export default function Navigation({ status = "Optimal", isProjectPage = false, 
                         {[
                             { name: 'Home', href: '/' },
                             { name: 'Services', href: '/#services' },
-                            { name: 'Works', href: '/works' },
+                            { name: 'Works', href: '/work' },
                             { name: 'Studio', href: '/#about' },
+                            { name: 'Software', href: '/nexuslink' },
                             { name: 'Contact', href: '/#contact' }
                         ].map((link, i) => (
-                            <a
+                            <Link
                                 key={i}
                                 href={link.href}
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 className="block text-5xl md:text-7xl font-display font-black tracking-tighter uppercase italic text-void hover:text-electric transition-colors"
                             >
                                 {link.name}<span className="text-electric not-italic">*</span>
-                            </a>
+                            </Link>
                         ))}
                     </div>
 

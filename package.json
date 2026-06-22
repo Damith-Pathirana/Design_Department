@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "ship": "next build && rd /s /q out\\admin",
     "start": "next start",
     "lint": "eslint"
   },

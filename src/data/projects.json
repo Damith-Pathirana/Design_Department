@@ -1,22 +1,176 @@
 [
     {
+        "id": "lankaithub",
+        "templateType": "ecommerce",
+        "title": "Lanka IT Hub",
+        "subtitle": "Computer Store & IT Services",
+        "category": "E-Commerce",
+        "description": "An online storefront and service portal for Lanka IT Hub, providing computers, accessories, and IT services to customers in Sri Lanka.",
+        "mainImage": "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1781991151315-Screenshot-2026-06-21-030221.png",
+        "gallery": [
+            "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1781991197523-Screenshot-2026-06-21-030300.png",
+            "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1781991244209-Screenshot-2026-06-21-030356.png",
+            "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1781991320640-Screenshot-2026-06-21-030515.png"
+        ],
+        "location": "Sri Lanka",
+        "year": "2024",
+        "url": "https://lankaithub.com/",
+        "role": "Web Development & E-Commerce",
+        "timeline": "3 Weeks",
+        "meta": [
+            {
+                "label": "Build",
+                "value": "E-Commerce Setup"
+            },
+            {
+                "label": "Stack",
+                "value": "WooCommerce"
+            }
+        ],
+        "isUnderDevelopment": false,
+        "protocolFeatures": []
+    },
+    {
+        "id": "office-shop",
+        "templateType": "ecommerce",
+        "title": "The Office Shop",
+        "subtitle": "Office Supplies & IT Equipment",
+        "category": "E-Commerce",
+        "description": "An online retail platform for The Office Shop, offering a wide range of office supplies, printers, and IT equipment for businesses and individuals.",
+        "mainImage": "/office-shop_hero.png",
+        "gallery": [
+            "/office-shop_hero.png",
+            "/office-shop_mid.png",
+            "/office-shop_bottom.png"
+        ],
+        "location": "Sri Lanka",
+        "year": "2024",
+        "url": "https://theofficeshop.lk/",
+        "role": "Web Development & E-Commerce",
+        "timeline": "3 Weeks",
+        "meta": [
+            {
+                "label": "Build",
+                "value": "E-Commerce Setup"
+            },
+            {
+                "label": "Stack",
+                "value": "WooCommerce"
+            }
+        ],
+        "isUnderDevelopment": false
+    },
+    {
+        "id": "hagginwood",
+        "templateType": "website",
+        "title": "Hagginwood Montessori",
+        "subtitle": "Montessori Pre-School Platform",
+        "category": "Web Development & Design",
+        "description": "A digital presence for Hagginwood Montessori, a pre-school offering a nurturing and safe environment designed to foster curiosity, independence, and learning through discovery.",
+        "mainImage": "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1781935128264-Screenshot-2026-06-20-060747.png",
+        "gallery": [
+            "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1781935183116-Screenshot-2026-06-20-060825.png",
+            "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1781935195314-Screenshot-2026-06-20-060804.png",
+            "https://pub-111df224f2794816a73ca697b4b45719.r2.dev/1781935214995-Screenshot-2026-06-20-061149.png"
+        ],
+        "location": "Sacramento, CA",
+        "year": "2024",
+        "url": "",
+        "role": "Web Development & Design",
+        "timeline": "2 Months",
+        "meta": [
+            {
+                "label": "Build",
+                "value": "CMS Integration"
+            },
+            {
+                "label": "Theme",
+                "value": "Educational / Playful"
+            },
+            {
+                "label": "Focus",
+                "value": "Lead Generation"
+            }
+        ],
+        "capabilities": [
+            {
+                "number": "01",
+                "title": "Program Showcase",
+                "description": "Detailing infant, toddler, and preschool programs tailored to developmental stages."
+            },
+            {
+                "number": "02",
+                "title": "Enrollment Flow",
+                "description": "Streamlined admission process for prospective parents."
+            },
+            {
+                "number": "03",
+                "title": "Daily Schedule",
+                "description": "Clear presentation of daily activities and routines."
+            }
+        ],
+        "strategy": {
+            "headline": "Nurturing Curiosity Digitally",
+            "body": "The goal was to create a warm and inviting digital presence that reflects the Montessori philosophy while providing essential information for prospective parents in the Sacramento area.",
+            "metricLabel": "Parent Engagement",
+            "metricValue": "+60%",
+            "metricDesc": "Increase in online enrollment inquiries",
+            "visualImage": "https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?q=80&w=2640&auto=format&fit=crop"
+        },
+        "features": {
+            "show": true,
+            "items": [
+                {
+                    "title": "Program Overview",
+                    "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2640&auto=format&fit=crop",
+                    "desc": "Showcasing the diverse programs for infants to preschoolers."
+                },
+                {
+                    "title": "Parent Communication",
+                    "image": "https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=2640&auto=format&fit=crop",
+                    "desc": "Clear channels for family-staff communication."
+                }
+            ]
+        },
+        "team": [],
+        "protocolFeatures": []
+    },
+    {
         "id": "bowatte-heritage",
+        "templateType": "ecommerce",
         "title": "Bowatte Ayurvedic",
         "subtitle": "Ayurvedic Heritage Design System",
         "category": "Visual Identity & Platform",
         "description": "A comprehensive digital transformation for Sri Lanka's leading name in Ayurvedic healthcare, modernizing a multi-generational legacy for a global wellness audience.",
-        "mainImage": "https://images.unsplash.com/photo-1612810806563-4cb166bbdaee?q=80&w=2670&auto=format&fit=crop",
+        "mainImage": "/bowatte-heritage_hero.png",
+        "gallery": [
+            "/bowatte-heritage_hero.png",
+            "/bowatte-heritage_mid.png",
+            "/bowatte-heritage_bottom.png"
+        ],
         "location": "Kandy / Colombo, SL",
         "year": "2024",
         "url": "https://bowatte.com",
         "role": "Lead Design & Strategy",
         "timeline": "6 Months",
-        "meta": {
-            "build": "Headless Commerce",
-            "systems": "Patient Care ERP",
-            "theme": "Heritage Minimal",
-            "engineering": "Advanced Integration"
-        },
+        "meta": [
+            {
+                "label": "Build",
+                "value": "Headless Commerce"
+            },
+            {
+                "label": "Systems",
+                "value": "Patient Care ERP"
+            },
+            {
+                "label": "Theme",
+                "value": "Heritage Minimal"
+            },
+            {
+                "label": "Engineering",
+                "value": "Advanced Integration"
+            }
+        ],
         "capabilities": [
             {
                 "number": "01",
@@ -37,7 +191,10 @@
                 "number": "04",
                 "title": "AI Consultation",
                 "description": "Intelligent symptom-mapping to recommend specific Ayurvedic treatments."
-            }
+            },
+            "Free Personalized Holistic Consultation",
+            "Ayurvedic Herbal Solutions & Pharmacy",
+            "Educational Workshops on Nutrition"
         ],
         "strategy": {
             "headline": "Bridging Ancient Wisdom with Modern Precision",
@@ -47,6 +204,11 @@
             "metricDesc": "Increase in digital system adoption and online consultations",
             "visualImage": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2640&auto=format&fit=crop"
         },
+        "features": [
+            "Free Personalized Holistic Consultation",
+            "Ayurvedic Herbal Solutions & Pharmacy",
+            "Educational Workshops on Nutrition"
+        ],
         "team": [
             {
                 "name": "Sarah Chen",
@@ -60,26 +222,65 @@
                 "desc": "Implemented the core e-commerce engine and patient database.",
                 "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2544&auto=format&fit=crop"
             }
+        ],
+        "protocolFeatures": [
+            {
+                "id": "config",
+                "label": "Custom Product Configurator",
+                "desc": "Real-time customization tools"
+            },
+            {
+                "id": "cart",
+                "label": "Abandoned Cart Recovery",
+                "desc": "Automated recapture flows"
+            },
+            {
+                "id": "recommend",
+                "label": "Smart Recommendation Engine",
+                "desc": "AI-driven suggestions"
+            },
+            {
+                "id": "pay",
+                "label": "Multi-Gateway Payment",
+                "desc": "Crypto / Apple Pay / Stripe"
+            }
         ]
     },
     {
         "id": "eyesavers-digital",
+        "templateType": "ecommerce",
         "title": "Eyesavers <br> Opticians",
         "subtitle": "Precision Vision Retail Ecosystem",
         "category": "E-commerce & Health",
         "description": "A sophisticated digital storefront and clinical booking integration for Sri Lanka's premier optometry chain, focusing on clarity, precision, and user-centric retail.",
         "mainImage": "https://images.unsplash.com/photo-1511511450040-677116ff389e?q=80&w=2670&auto=format&fit=crop",
+        "gallery": [
+            "https://images.unsplash.com/photo-1511511450040-677116ff389e?q=80&w=2670&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?q=80&w=2670&auto=format&fit=crop"
+        ],
         "location": "Colombo, SL",
         "year": "2025",
         "url": "https://eyesavers.lk",
         "role": "Product Design & Engineering",
         "timeline": "5 Months",
-        "meta": {
-            "build": "Next.js 14",
-            "systems": "Omnichannel Inventory",
-            "theme": "Optical Clarity",
-            "engineering": "VTO (Virtual Try-On) Integration"
-        },
+        "meta": [
+            {
+                "label": "Build",
+                "value": "Next.js 14"
+            },
+            {
+                "label": "Systems",
+                "value": "Omnichannel Inventory"
+            },
+            {
+                "label": "Theme",
+                "value": "Optical Clarity"
+            },
+            {
+                "label": "Engineering",
+                "value": "VTO (Virtual Try-On) Integration"
+            }
+        ],
         "capabilities": [
             {
                 "number": "01",
@@ -123,26 +324,50 @@
                 "desc": "Architected the AR fitting engine and ERP integration.",
                 "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2544&auto=format&fit=crop"
             }
-        ]
+        ],
+        "protocolFeatures": [],
+        "features": {
+            "show": false,
+            "items": []
+        },
+        "isUnderDevelopment": true
     },
     {
         "id": "heaven-garden-kandy",
+        "templateType": "website",
         "title": "Heaven Garden <br> Inn",
         "subtitle": "Boutique Hospitality Ecosystem",
         "category": "Identity & Direct Commerce",
         "description": "A high-fidelity digital transformation for a luxury boutique retreat in Kandy, bridging the gap between serene hillside hospitality and high-conversion booking architecture.",
-        "mainImage": "https://heavengardeninn.com/wp-content/uploads/2024/01/Heaven-Garden-Inn-Kandy-Slider.jpg",
+        "mainImage": "/heaven-garden-kandy_hero.png",
+        "gallery": [
+            "/heaven-garden-kandy_hero.png",
+            "/heaven-garden-kandy_mid.png",
+            "/heaven-garden-kandy_bottom.png"
+        ],
         "location": "Kandy, SL",
         "year": "2024",
         "url": "https://heavengardeninn.com",
         "role": "Lead Strategy & Production",
         "timeline": "4 Months",
-        "meta": {
-            "build": "High-Performance Stack",
-            "systems": "Direct-to-Owner Booking",
-            "theme": "Tropical Minimalism",
-            "engineering": "Frictionless UI/UX"
-        },
+        "meta": [
+            {
+                "label": "Build",
+                "value": "High-Performance Stack"
+            },
+            {
+                "label": "Systems",
+                "value": "Direct-to-Owner Booking"
+            },
+            {
+                "label": "Theme",
+                "value": "Tropical Minimalism"
+            },
+            {
+                "label": "Engineering",
+                "value": "Frictionless UI/UX"
+            }
+        ],
         "capabilities": [
             {
                 "number": "01",
@@ -163,7 +388,11 @@
                 "number": "04",
                 "title": "Tech Consultation",
                 "description": "Full audit and restructuring of digital infrastructure for maximum global visibility."
-            }
+            },
+            "Fully-Equipped Kitchens",
+            "Comprehensive CCTV Security",
+            "High-Speed Free WiFi",
+            "Dedicated Relaxing & Dining Areas"
         ],
         "strategy": {
             "headline": "Elegance <br> Architected <br> by <br> Calm",
@@ -180,26 +409,51 @@
                 "desc": "End-to-end digital architecture, technical strategy, and visual production.",
                 "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2544&auto=format&fit=crop"
             }
+        ],
+        "protocolFeatures": [],
+        "features": [
+            "Fully-Equipped Kitchens",
+            "Comprehensive CCTV Security",
+            "High-Speed Free WiFi",
+            "Dedicated Relaxing & Dining Areas"
         ]
     },
     {
         "id": "ccc-kandy-digital",
+        "templateType": "software",
         "title": "CCC Kandy",
         "subtitle": "Healthcare Consultation Ecosystem",
         "category": "Medical Tech & Platform",
         "description": "A high-fidelity digital transformation for one of Sri Lanka’s pioneering healthcare institutions, modernizing a 40-year legacy into a seamless, multi-channel clinical hub.",
-        "mainImage": "https://ccckandy.lk/wp-content/uploads/2023/12/59-Ground-floor-copy.jpg",
+        "mainImage": "/ccc-kandy-digital_hero.png",
+        "gallery": [
+            "/ccc-kandy-digital_hero.png",
+            "/ccc-kandy-digital_mid.png",
+            "/ccc-kandy-digital_bottom.png"
+        ],
         "location": "Kandy, SL",
         "year": "2024",
         "url": "https://ccckandy.lk",
         "role": "Lead Design & Strategy",
         "timeline": "6 Months",
-        "meta": {
-            "build": "Clinical Consultation Stack",
-            "systems": "E-Channelling Engine",
-            "theme": "Medical Precision",
-            "engineering": "High-Density Data Management"
-        },
+        "meta": [
+            {
+                "label": "Build",
+                "value": "Clinical Consultation Stack"
+            },
+            {
+                "label": "Systems",
+                "value": "E-Channelling Engine"
+            },
+            {
+                "label": "Theme",
+                "value": "Medical Precision"
+            },
+            {
+                "label": "Engineering",
+                "value": "High-Density Data Management"
+            }
+        ],
         "capabilities": [
             {
                 "number": "01",
@@ -220,7 +474,10 @@
                 "number": "04",
                 "title": "Data Infrastructure",
                 "description": "Streamlining the digital footprint for 40 years of medical excellence across multiple physical facilities."
-            }
+            },
+            "40 Years of Medical Excellence",
+            "Over 45 Specialized Consultant Categories",
+            "Fast & Reliable Clinical Laboratory Services"
         ],
         "strategy": {
             "headline": "Legacy <br> Built <br> on <br>Precision",
@@ -237,26 +494,50 @@
                 "desc": "Managed the full-scale digital audit, platform architecture, and heritage brand modernization.",
                 "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2544&auto=format&fit=crop"
             }
+        ],
+        "protocolFeatures": [],
+        "features": [
+            "40 Years of Medical Excellence",
+            "Over 45 Specialized Consultant Categories",
+            "Fast & Reliable Clinical Laboratory Services"
         ]
     },
     {
         "id": "kandy-friend-in-need",
+        "templateType": "custom",
         "title": "Kandy Friend-In-Need",
         "subtitle": "Philanthropic Legacy Platform",
         "category": "Social Impact & Web Presence",
         "description": "A dignified digital gateway for one of Sri Lanka’s oldest social service organizations (Est. 1837), designed to honor a two-century legacy while modernizing donor engagement.",
-        "mainImage": "https://kandyfriendinneed.org/wp-content/uploads/2023/12/Ampitiya-Elders-Home-Cottages.jpg",
+        "mainImage": "/kandy-friend-in-need_hero.png",
+        "gallery": [
+            "/kandy-friend-in-need_hero.png",
+            "/kandy-friend-in-need_mid.png",
+            "/kandy-friend-in-need_bottom.png"
+        ],
         "location": "Kandy, SL",
         "year": "2024",
         "url": "https://kandyfriendinneed.org",
         "role": "Lead Design & Strategy",
         "timeline": "4 Months",
-        "meta": {
-            "build": "Philanthropic Stack",
-            "systems": "Donation Architecture",
-            "theme": "Compassionate Minimalism",
-            "engineering": "Accessibility Optimized"
-        },
+        "meta": [
+            {
+                "label": "Build",
+                "value": "Philanthropic Stack"
+            },
+            {
+                "label": "Systems",
+                "value": "Donation Architecture"
+            },
+            {
+                "label": "Theme",
+                "value": "Compassionate Minimalism"
+            },
+            {
+                "label": "Engineering",
+                "value": "Accessibility Optimized"
+            }
+        ],
         "capabilities": [
             {
                 "number": "01",
@@ -277,7 +558,11 @@
                 "number": "04",
                 "title": "Community Portal",
                 "description": "A centralized hub for news, constitutional transparency, and organizational transparency for stakeholders."
-            }
+            },
+            "Established in 1837 (Historic Society)",
+            "Ampitiya Elders Home & Cottages",
+            "Mulgampola Elders' Home",
+            "Visrama Niwasaya Retiree Haven"
         ],
         "strategy": {
             "headline": "Legacy <br> Built <br> on <br>Solace",
@@ -294,26 +579,51 @@
                 "desc": "Full-scale digital audit, brand storytelling, and philanthropic interface engineering.",
                 "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2544&auto=format&fit=crop"
             }
+        ],
+        "protocolFeatures": [],
+        "features": [
+            "Established in 1837 (Historic Society)",
+            "Ampitiya Elders Home & Cottages",
+            "Mulgampola Elders' Home",
+            "Visrama Niwasaya Retiree Haven"
         ]
     },
     {
         "id": "legacy-education-academy",
+        "templateType": "software",
         "title": "Legacy <br> Education",
         "subtitle": "Global Academic Design System",
         "category": "EdTech & Learning Platform",
         "description": "A comprehensive digital ecosystem for a premier academic academy, focused on transforming grades into opportunities through exam-focused methodologies and high-fidelity learning tools.",
-        "mainImage": "https://legacyeducation.academy/wp-content/uploads/2024/01/Legacy-Education-Hero-Banner.jpg",
+        "mainImage": "/legacy-education-academy_hero.png",
+        "gallery": [
+            "/legacy-education-academy_hero.png",
+            "/legacy-education-academy_mid.png",
+            "/legacy-education-academy_bottom.png"
+        ],
         "location": "Global / Virtual",
         "year": "2024",
         "url": "https://legacyeducation.academy",
         "role": "Lead Strategy & Engineering",
         "timeline": "5 Months",
-        "meta": {
-            "build": "LMS & Educational Stack",
-            "systems": "Assessment Frameworks",
-            "theme": "Academic Excellence",
-            "engineering": "Scale-Optimized Architecture"
-        },
+        "meta": [
+            {
+                "label": "Build",
+                "value": "LMS & Educational Stack"
+            },
+            {
+                "label": "Systems",
+                "value": "Assessment Frameworks"
+            },
+            {
+                "label": "Theme",
+                "value": "Academic Excellence"
+            },
+            {
+                "label": "Engineering",
+                "value": "Scale-Optimized Architecture"
+            }
+        ],
         "capabilities": [
             {
                 "number": "01",
@@ -334,7 +644,11 @@
                 "number": "04",
                 "title": "Digital Pedagogy",
                 "description": "Modernizing Edexcel and Cambridge syllabi delivery through small-group logic and catch-up automation."
-            }
+            },
+            "Edexcel IGCSE/IAL Specialists",
+            "Small Group & Expert Tutors",
+            "Exam-Focused Methods & Mock Exams",
+            "Flexible Online & On-Campus Learning"
         ],
         "strategy": {
             "headline": "Transformation <br> Through <br>Precision <br> Learning",
@@ -351,26 +665,51 @@
                 "desc": "Managed the full-scale platform engineering, brand narrative, and academic UI/UX design.",
                 "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2544&auto=format&fit=crop"
             }
+        ],
+        "protocolFeatures": [],
+        "features": [
+            "Edexcel IGCSE/IAL Specialists",
+            "Small Group & Expert Tutors",
+            "Exam-Focused Methods & Mock Exams",
+            "Flexible Online & On-Campus Learning"
         ]
     },
     {
         "id": "trilium-language-centre",
+        "templateType": "website",
         "title": "Trilium <br> Language Centre",
         "subtitle": "Linguistic Growth Ecosystem",
         "category": "Education & Communication",
         "description": "A high-fidelity digital platform for a premier language institution, engineered to build student confidence through interactive learning environments and tailored pedagogical paths.",
-        "mainImage": "https://triliumlc.com/wp-content/uploads/2024/01/Trilium-Language-Centre-Hero.jpg",
+        "mainImage": "/trilium-language-centre_hero.png",
+        "gallery": [
+            "/trilium-language-centre_hero.png",
+            "/trilium-language-centre_mid.png",
+            "/trilium-language-centre_bottom.png"
+        ],
         "location": "Global / Virtual",
         "year": "2024",
         "url": "https://triliumlc.com",
         "role": "Lead Strategy & Engineering",
         "timeline": "3 Months",
-        "meta": {
-            "build": "Interactive Learning Stack",
-            "systems": "Custom Pedagogy Logic",
-            "theme": "Vibrant Academic",
-            "engineering": "User-Centric Architecture"
-        },
+        "meta": [
+            {
+                "label": "Build",
+                "value": "Interactive Learning Stack"
+            },
+            {
+                "label": "Systems",
+                "value": "Custom Pedagogy Logic"
+            },
+            {
+                "label": "Theme",
+                "value": "Vibrant Academic"
+            },
+            {
+                "label": "Engineering",
+                "value": "User-Centric Architecture"
+            }
+        ],
         "capabilities": [
             {
                 "number": "01",
@@ -408,26 +747,50 @@
                 "desc": "Full-scale platform engineering, visual branding, and educational UI/UX design.",
                 "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2544&auto=format&fit=crop"
             }
-        ]
+        ],
+        "protocolFeatures": [],
+        "features": {
+            "show": false,
+            "items": []
+        }
     },
     {
         "id": "beevibe-cleaning",
+        "templateType": "ecommerce",
         "title": "BeeVibe <br> Cleaning",
         "subtitle": "Residential Hygiene Infrastructure",
         "category": "Service Operations & Digital Presence",
         "description": "A streamlined digital interface for an Australian-based residential cleaning service, engineered to project reliability, precision, and a zero-friction booking experience.",
-        "mainImage": "https://images.unsplash.com/photo-1581578731548-c64695cc6954?q=80&w=2670&auto=format&fit=crop",
+        "mainImage": "/beevibe-cleaning_hero.png",
+        "gallery": [
+            "/beevibe-cleaning_hero.png",
+            "/beevibe-cleaning_mid.png",
+            "/beevibe-cleaning_bottom.png"
+        ],
+        "isUnderDevelopment": true,
         "location": "Box Hill VIC, AU",
         "year": "2025",
         "url": "https://beevibe.com.au",
         "role": "Lead Strategy & Engineering",
         "timeline": "3 Months",
-        "meta": {
-            "build": "Service Management Stack",
-            "systems": "Automated Dispatch Logic",
-            "theme": "Spotless Minimalism",
-            "engineering": "Efficiency-First Architecture"
-        },
+        "meta": [
+            {
+                "label": "Build",
+                "value": "Service Management Stack"
+            },
+            {
+                "label": "Systems",
+                "value": "Automated Dispatch Logic"
+            },
+            {
+                "label": "Theme",
+                "value": "Spotless Minimalism"
+            },
+            {
+                "label": "Engineering",
+                "value": "Efficiency-First Architecture"
+            }
+        ],
         "capabilities": [
             {
                 "number": "01",
@@ -448,7 +811,10 @@
                 "number": "04",
                 "title": "Growth Engineering",
                 "description": "Optimizing local presence in the Victoria market to drive high-intent residential leads."
-            }
+            },
+            "Professional Cleaning Services",
+            "Dynamic Environment Care",
+            "Quality and Flexible Service"
         ],
         "strategy": {
             "headline": "Spotless <br> Results <br> Through <br>Digital Logic",
@@ -465,6 +831,12 @@
                 "desc": "Managed the full-scale service audit, technical strategy, and operational UI/UX design.",
                 "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2544&auto=format&fit=crop"
             }
+        ],
+        "protocolFeatures": [],
+        "features": [
+            "Professional Cleaning Services",
+            "Dynamic Environment Care",
+            "Quality and Flexible Service"
         ]
     }
 ]

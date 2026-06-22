@@ -6,6 +6,7 @@ import Showcase from "@/components/Showcase";
 import Services from "@/components/Services";
 import Journal from "@/components/Journal";
 import Contact from "@/components/Contact";
+import TrustedBrands from "@/components/TrustedBrands";
 
 async function getData() {
   const projectsPath = path.join(process.cwd(), 'src/data/projects.json');
@@ -23,6 +24,7 @@ export default async function Home() {
   return (
     <main className="flex min-h-screen flex-col w-full bg-paper text-void">
       <Hero data={siteContent.hero} />
+      {siteContent.trustedBrands && <TrustedBrands data={siteContent.trustedBrands} />}
       <Services data={siteContent.services} />
       <Showcase projects={projects} data={siteContent.showcase} />
       <About data={siteContent.about} />

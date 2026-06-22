@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { LayoutGrid, List } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import NexusLogo from "@/components/NexusLogo";
 
 export default function Works({ projects }: { projects: any[] }) {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -92,7 +93,7 @@ export default function Works({ projects }: { projects: any[] }) {
                     <div className="max-w-xl">
                         <div className="text-electric text-sm font-semibold mb-2 font-label gs-reveal-text">02 / Portfolio</div>
                         <h2 className="font-display text-5xl md:text-6xl text-void mb-4 tracking-tight italic">
-                            <span className="block gs-reveal-text">Selected Works<span className="not-italic text-electric">*</span></span>
+                            <span className="block gs-reveal-text">Our Works<span className="not-italic text-electric">*</span></span>
                         </h2>
                         <p className="text-gray-500 text-sm md:text-base font-medium leading-relaxed gs-reveal-text font-sans">
                             A hand-picked selection of architectural nodes and atmospheric bases driven by generative design, completely adapted for light theme fidelity.
@@ -119,10 +120,40 @@ export default function Works({ projects }: { projects: any[] }) {
                     {displayProjects.map((project, idx) => {
                         const cardInner = (
                             <>
-                                <div className={`relative w-full p-[1px] rounded-[24px] bg-gradient-to-b from-black/10 to-transparent ${layout === 'grid' ? 'mb-6' : 'mb-4'} overflow-hidden shadow-2xl shadow-black/10`}>
-                                    <div className={`relative ${layout === 'grid' ? 'aspect-[16/9] md:aspect-[21/9]' : 'aspect-square'} rounded-[23px] overflow-hidden bg-gray-100`}>
-                                        <img src={project.mainImage} alt={project.title} className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-[1.03] transition-all duration-1000 ease-out filter grayscale group-hover:filter-none" />
-                                        <div className="absolute top-6 right-6 px-3 py-1.5 rounded-md bg-white/70 backdrop-blur-md border border-black/10">
+                                <div 
+                                    className={`relative w-full p-[1px] rounded-[24px] bg-gradient-to-b from-black/10 to-transparent ${layout === 'grid' ? 'mb-6' : 'mb-4'} overflow-hidden shadow-2xl shadow-black/10`}
+                                    style={{
+                                        transform: "perspective(1200px) rotateY(-15deg) rotateX(5deg) scale(0.95)",
+                                        transformStyle: "preserve-3d",
+                                        transition: "transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1)"
+                                    }}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.transform = "perspective(1200px) rotateY(0deg) rotateX(0deg) scale(1)";
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.transform = "perspective(1200px) rotateY(-15deg) rotateX(5deg) scale(0.95)";
+                                    }}
+                                >
+                                    <div className={`relative aspect-[16/9] rounded-[23px] overflow-hidden bg-white`}>
+                                        {project.isUnderDevelopment ? (
+                                            <div className="w-full h-full bg-[#fafafa] flex flex-col items-center justify-center p-6 text-center border border-dashed border-zinc-300">
+                                                <div className="mb-4">
+                                                    <NexusLogo className="w-12 h-12 text-lg shadow-none" />
+                                                </div>
+                                                <h2 className="text-lg md:text-xl font-black italic uppercase tracking-tighter text-zinc-900 mb-1 font-display">Under Construction</h2>
+                                                <p className="text-zinc-500 text-[10px] max-w-xs uppercase font-label tracking-widest font-black">Asset pending deployment</p>
+                                            </div>
+                                        ) : (
+                                            <img 
+                                                src={project.mainImage.startsWith('http') ? project.mainImage : `/raw${project.mainImage}`} 
+                                                alt={project.title} 
+                                                className="w-full h-full object-cover object-top opacity-100 group-hover:scale-105 transition-all duration-1000 ease-out origin-top" 
+                                            />
+                                        )}
+                                        <div className="absolute top-6 right-6 px-3 py-1.5 rounded-md bg-white/70 backdrop-blur-md border border-black/10 flex items-center gap-2">
+                                            {project.isUnderDevelopment && (
+                                                <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
+                                            )}
                                             <span className="text-xs font-semibold tracking-widest text-void uppercase">{project.category}</span>
                                         </div>
                                     </div>
@@ -142,7 +173,7 @@ export default function Works({ projects }: { projects: any[] }) {
 
                         return (
                             <div key={project.id} className={`w-full ${layout === 'grid' ? 'md:w-[85%]' : 'w-full'} ${layout === 'grid' && idx % 2 !== 0 ? 'ml-auto' : ''} group cursor-pointer project-card-node`}>
-                                <Link href={`/works/${project.id}`} className="block">
+                                <Link href={`/work/${project.id}`} className="block">
                                     {cardInner}
                                 </Link>
                             </div>
